@@ -102,8 +102,8 @@
             </div>
             <div class="input-field" id="text-input">
               <span class="garden-detail" id="garden-description"
-                >Just behind the old barber shop and right under your nose. Go
-                around the store and join us in turning the old basketball court
+                >Just behind the old barber shop and right under your nose. <br>
+                Go around the store and join us in turning the old basketball court
                 into a lush, fun and citrusi communal garden space. Growing all
                 kinds of fresh produce for your plate and stomach.
               </span>
