@@ -72,8 +72,14 @@
             </a>
           </li>
         </ul>
+        <form class="mt-8" action="#" method="GET">
+          <div class="search-bar">
+            <button id="search-icon" type="submit"></button>
+            <input type="text" placeholder="Search" class="search" />
+          </div>
+        </form>
       </nav>
-      <div class="edit-icons grid place-items-center">
+      <div class="edit-icons grid place-items-center place-self-start">
         <div>
           <button><img src="includes/images/icons/bell.png" alt="" /></button>
           <button class="hidden lg:inline">
@@ -85,12 +91,12 @@
     <main class="mt-6">
     <div class="flex">
       <div class="main-wrapper">
-        <form action="#" method="GET">
+        <!-- <form action="#" method="GET">
           <div class="search-bar">
             <button id="search-icon" type="submit"></button>
             <input type="text" placeholder="Search" class="search" />
           </div>
-        </form>
+        </form> -->
         <section class="category-wrapper">
           <h1 class="text-2xl font-semibold">Popular Right Now</h1>
           <div class="gardens-container gap-6">
