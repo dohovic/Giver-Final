@@ -672,9 +672,9 @@ input::placeholder {
     flex-direction: column;
   }
 
-  .gardens-container {
-    /* justify-content: space-around; */
-  }
+  /* .gardens-container {
+    justify-content: space-around;
+  } */
 
   .category-wrapper {
     display: flex;
