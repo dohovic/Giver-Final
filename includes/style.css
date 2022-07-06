@@ -248,9 +248,20 @@ input::placeholder {
   padding-top: 10px;
   overflow-y: auto;
 }
+
+select {
+  width: 52%;
+}
+
+#selection-field {
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .edit-icons{
   vertical-align: middle;
 }
+
 .time-inputs {
   display: flex;
   max-width: 898px;
@@ -347,7 +358,7 @@ input::placeholder {
 }
 
 .input-container {
-  gap:24px;
+  gap: 24px;
   display: flex;
   flex-wrap: wrap;
   margin: 0px auto;
