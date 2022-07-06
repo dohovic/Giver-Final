@@ -26,11 +26,11 @@
             <form action="#" method="post" class="rounded mt-8">
               <div class="flex flex-col p-4 justify-between border-t border-r border-l border-[#F3F0F0] h-1/3">
                 <label for="username" class="text-sm">Username</label>
-                <input type="text" class="flex border-b-2" placeholder="Enter your email">
+                <input type="text" class="flex border-b-2" placeholder="Your email" required>
               </div>
               <div class="flex flex-col p-4 justify-between border border-[#F3F0F0] h-1/3">
                 <label for="password" class="text-sm">Password</label>
-                <input type="password" class="flex border-b-2" placeholder="Enter password">
+                <input type="password" class="flex border-b-2" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="28" required>
               </div>
               <div class="flex flex-col justify-between p-4 h-32">
                 <div class="flex flex-row flex-wrap justify-between">
