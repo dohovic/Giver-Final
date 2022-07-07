@@ -618,7 +618,7 @@ select {
 
 
 @media only screen and (max-width: 1000px) {
-  nav{
+  nav {
     display: hidden;
   }
 }
@@ -627,7 +627,7 @@ select {
     flex-wrap: wrap;
   }
 
-  .input-container{
+  .input-container {
     justify-content: space-around;
   }
 
@@ -672,6 +672,19 @@ select {
     justify-content: center;
   }
 }
+@media (max-width: 990px) {
+  .gardens-container {
+    justify-content: center;
+  }
+
+  .category-wrapper {
+    text-align: center;
+  }
+  .social-container {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .gardens-container {
     justify-content: center;
