@@ -292,7 +292,7 @@ select {
   font-size: 16px;
 }
 
-#tasks {
+.tasks {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -371,7 +371,10 @@ select {
   min-width: 300px;
   width: 60%;
 }
-.second-comtainer {
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   padding-left: 50px;
 }
@@ -623,7 +626,11 @@ input[value="submit"] {
   z-index: 2;
 }
 
-
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -631,7 +638,17 @@ input[value="submit"] {
     display: hidden;
   }
 }
-@media only screen and (max-width: 1152px) {
+@media only screen and (max-width: 1150px) {
+  .new-task {
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+  }
+
+  .new-task > button {
+    place-self: center;
+  }
+
   .time-inputs {
     flex-wrap: wrap;
   }
@@ -703,7 +720,7 @@ input[value="submit"] {
     justify-content: center;
   }
 
-  .second-comtainer {
+  .tasks-container {
     padding-top: 20px;
     padding-left: 0px;
   }

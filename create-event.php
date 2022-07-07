@@ -133,23 +133,25 @@
               </a>
             </div>
           </section>
-          <div class="second-comtainer">
-            <section id="tasks">
-              <div>
-                <button
-                  type="button"
-                  onclick="addTask()"
-                  class="flex gap-2 place-items-center"
-                >
-                  <img
-                    src="includes/images/icons/add-plant-icon-22.jpeg"
-                    alt="add-task"
-                  />
-                  <p>Add Task</p>
-                </button>
-              </div>
-            </section>
-            <button class="submit-button">Submit</button>
+          <div class="tasks-wrapper">
+            <div class="tasks-container">
+              <section class="tasks">
+                <div class="new-task">
+                  <button
+                    type="button"
+                    onclick="addTask()"
+                    class="flex gap-2 place-items-center"
+                  >
+                    <img
+                      src="includes/images/icons/add-plant-icon-22.jpeg"
+                      alt="add-task"
+                    />
+                    <p>Add Task</p>
+                  </button>
+                  <input type="submit" value="submit" id="new-task-submit">
+                </div>
+              </section>
+            </div>
           </div>
         </form>
       </div>
