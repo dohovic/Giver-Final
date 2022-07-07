@@ -135,7 +135,7 @@
           </section>
           <div class="tasks-wrapper">
             <div class="tasks-container">
-              <section class="tasks">
+              <section id="tasks">
                 <div class="new-task">
                   <button
                     type="button"
@@ -148,9 +148,9 @@
                     />
                     <p>Add Task</p>
                   </button>
-                  <input type="submit" value="submit" id="new-task-submit">
                 </div>
               </section>
+              <input type="submit" value="submit" id="new-task-submit">
             </div>
           </div>
         </form>

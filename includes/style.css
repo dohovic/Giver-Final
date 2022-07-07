@@ -294,11 +294,12 @@ select {
   font-size: 16px;
 }
 
-.tasks {
+#tasks {
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: flex-start;
+  place-items: center;
 }
 
 #line-input {
