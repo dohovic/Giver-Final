@@ -116,8 +116,8 @@
             </div>
           </div>
         </section>
-        <h1 class="text-2xl font-semibold mt-3">Our Giving Plants</h1>
         <section class="category-wrapper">
+          <h1 class="text-2xl font-semibold mt-3">Our Giving Plants</h1>
           <div class="gardens-container gap-12">
             <section class="plant-item">
               <div class="garden-image" id="item-display">
@@ -125,10 +125,10 @@
                   src="./includes/images/items/lemon-no-bottom-rounds.png"
                   alt=""
                 />
-              </div>
-              <div class="amount-display">
-                <span>4&nbsp</span>
-                <span>Lemon Trees</span>
+                <div class="amount-display">
+                  <span>4&nbsp</span>
+                  <span>Lemon Trees</span>
+                </div>
               </div>
             </section>
             <section class="plant-item">
@@ -137,10 +137,10 @@
                   src="./includes/images/items/basil-no-bottom-rounds.png"
                   alt=""
                 />
-              </div>
-              <div class="amount-display">
-                <span>60&nbsp</span>
-                <span>Basil</span>
+                <div class="amount-display">
+                  <span>60&nbsp</span>
+                  <span>Basil</span>
+                </div>
               </div>
             </section>
             <section class="plant-item">
@@ -149,15 +149,15 @@
                   src="./includes/images/items/cherry-tomatoes-no-bottom-rounds.png"
                   alt=""
                 />
-              </div>
-              <div class="amount-display">
-                <span>48&nbsp</span>
-                <span>Cherry Tomatoes</span>
+                <div class="amount-display">
+                  <span>48&nbsp</span>
+                  <span>Cherry Tomatoes</span>
+                </div>
               </div>
             </section>
           </div>
         </section>
-        <section class="social-container mt-8">
+        <section class="social-container">
           <section class="social-comments">
             <div class="comment-container">
               <div class="social-profile">

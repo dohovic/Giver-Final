@@ -144,8 +144,9 @@ input::placeholder {
 .plant-item {
   display: flex;
   flex-direction: column;
+  width: 30%;
   /* flex-basis: min-content; */
-  max-width: 424px;
+  /* max-width: 424px; */
   /* max-height: 264px; */
   min-width: 160px;
   /* min-height: 176px; */
@@ -363,6 +364,7 @@ select {
   flex-wrap: wrap;
   margin: 0px auto;
   align-items: center;
+  justify-content: space-around;
 }
 
 .inputs-form{
@@ -421,10 +423,8 @@ select {
 
 .amount-display {
   display: flex;
-  max-width: 424px;
-  max-height: 64px;
-  min-height: 40px;
-  min-width: 424px;
+  width: 100%;
+  height: 3rem;
   justify-content: center;
   align-items: center;
 
@@ -500,6 +500,7 @@ select {
   flex-wrap: wrap;
   align-self: center;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .comments-wrapper {
@@ -574,6 +575,7 @@ select {
   padding: 6px;
   z-index: 3;
   font-size: 12px;
+  height: 100px;
 }
 
 #story-profile > span {
@@ -585,8 +587,9 @@ select {
   gap:24px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0px auto;
-  align-items: center;
+  justify-content: space-between;
+  /* margin: 0px auto; */
+  /* align-items: center; */
 }
 
 .story-desktop {
@@ -600,8 +603,8 @@ select {
   /* background-size: 100% auto; */
   /* background: #F3F0F0; */
   border-radius: 5px;
-  margin-right: 16px;
-  margin-bottom: 8px;
+  /* margin-right: 16px; */
+  /* margin-bottom: 8px; */
 }
 
 .story-pic-container {
@@ -647,10 +650,10 @@ select {
     flex-basis: auto;
   }
 
-    .plant-item {
+  /* .plant-item {
     flex: 0 1;
     flex-shrink: 2;
-  }
+  } */
 
   .plant-amount-editor {
     width: 160px; 
@@ -664,8 +667,16 @@ select {
   .amount-display {
     min-width: 160px;
   }
+
+  .main-wrapper {
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .gardens-container {
+    justify-content: center;
+  }
+
   .second-comtainer {
     padding-top: 20px;
     padding-left: 0px;
@@ -690,6 +701,7 @@ select {
   .category-wrapper {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .category-wrapper > h1 h2 {
@@ -733,7 +745,6 @@ select {
 }
 
 .login-content {
-  /* flex flex-col justify-center w-full h-full */
   display: flex;
   flex-direction: column;
   justify-content: center;
