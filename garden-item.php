@@ -62,7 +62,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+            <a href="./create-event.php" class="grid gap-3 p-2 w-40 h-12 items-center">
               <img
                 src="includes/images/icons/icon-eventNew.png"
                 alt=""

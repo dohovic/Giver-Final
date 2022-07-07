@@ -189,8 +189,9 @@
                 </div>
               </section>
             </div>
+            <input type="submit" value="submit">
           </section>
-          <button class="submit-button" onclick="location.href = './garden-item.php';">Submit</button>
+          <!-- <button class="submit-button" onclick="location.href = './garden-item.php';">Submit</button> -->
         </form>
       </div>
     </main>
