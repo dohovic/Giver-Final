@@ -21,7 +21,10 @@
       <div class="login-wrapper">
         <div class="login-container">
           <div class="login-content">
-            <h3>Log in to Giver</h3>
+            <div class="logo">
+              <a href="#" id="logo"></a>
+            </div>
+            <!-- <h3>Log in to Giver</h3> -->
             <p>Come smell the flowers</p>
             <form action="#" method="post" class="login-form">
               <div class="login-field" id="login-username">
