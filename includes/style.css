@@ -149,7 +149,7 @@ input::placeholder {
   /* max-width: 424px; */
   /* max-height: 264px; */
   min-width: 160px;
-  /* min-height: 176px; */
+  min-height: 176px;
   align-items: center;
   justify-content: space-between;
   font-style: normal;
@@ -440,9 +440,9 @@ select {
 .plant-amount-editor {
   display: flex;
   justify-content: center;
-  max-width: 424px;
-  max-height: 64px;
-
+  /* max-width: 424px;
+  max-height: 64px; */
+  width: 100%;
   border-radius: 15px;
   background: #d8d8d8;
 }
@@ -481,22 +481,21 @@ select {
   align-items: center;
 }
 
-/* .submit-button {
-  width: 144px;
-  height: 48px;
-  margin-top: 16px;
-
-  border-radius: 15px;
-  background: #f3f0f0;
-} */
-
 input[type=submit] {
   width: 144px;
   height: 48px;
   margin-top: 16px;
-
   border-radius: 15px;
-  background: #f3f0f0;
+  background-color: #f3f0f0;
+} */
+
+input[value="submit"] {
+  width: 144px;
+  height: 48px;
+  margin-top: 16px;
+  
+  border-radius: 15px;
+  background-color: #f3f0f0;
 }
 
 .garden-detail {
@@ -664,9 +663,9 @@ input[type=submit] {
     flex-shrink: 2;
   } */
 
-  .plant-amount-editor {
+  /* .plant-amount-editor {
     width: 160px; 
-  }
+  } */
 
   .garden-image-edit > :nth-child(2) {
     width: 24px;
@@ -695,6 +694,10 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 768px) {
+  input[value="submit"] {
+    place-self: center;
+  }
+
   .gardens-container {
     justify-content: center;
   }

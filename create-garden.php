@@ -186,9 +186,10 @@
                 </div>
               </section>
             </div>
+            <input type="submit" value="submit">
           </section>
           <input type="submit" class="submit-button" value="Submit">
-          <!-- <button class="submit-button" onclick="location.href = './garden-item.php';">Submit</button> -->
+
         </form>
       </div>
     </main>

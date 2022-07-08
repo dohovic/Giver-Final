@@ -44,7 +44,7 @@
                     </label>
                     <a href="#" class="r-label-text">Forgot password?</a>
                   </div>
-                  <input type="submit" value="Log In" class="login-button">
+                  <input type="submit" value="Log In">
                 </div>
               </form>
             </div>
