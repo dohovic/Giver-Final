@@ -481,7 +481,16 @@ select {
   align-items: center;
 }
 
-.submit-button {
+/* .submit-button {
+  width: 144px;
+  height: 48px;
+  margin-top: 16px;
+
+  border-radius: 15px;
+  background: #f3f0f0;
+} */
+
+input[type=submit] {
   width: 144px;
   height: 48px;
   margin-top: 16px;

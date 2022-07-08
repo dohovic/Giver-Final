@@ -88,16 +88,13 @@
           <section class="input-container">
             <div class="inputs-form">
               <div class="input-field" id="line-input">
-                <input type="text" placeholder="Add Garden Name" />
+                <input type="text" placeholder="Add Garden Name" minlength="3" required/>
               </div>
               <div class="input-field" id="selection-field">
-                <input type="text" placeholder="Enter Garden's Address" />
+                <input type="text" placeholder="Enter Garden's Address" minlength="3" required/>
               </div>
               <div class="input-field" id="text-input">
-                <textarea
-                  type="text"
-                  placeholder="Add Garden's Description"
-                ></textarea>
+                <textarea type="text" placeholder="Add Garden's Description"></textarea>
               </div>
             </div>
             <div>
@@ -190,7 +187,8 @@
               </section>
             </div>
           </section>
-          <button class="submit-button" onclick="location.href = './garden-item.php';">Submit</button>
+          <input type="submit" class="submit-button" value="Submit">
+          <!-- <button class="submit-button" onclick="location.href = './garden-item.php';">Submit</button> -->
         </form>
       </div>
     </main>

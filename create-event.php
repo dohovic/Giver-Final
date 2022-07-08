@@ -89,11 +89,11 @@
           <section class="input-container">
             <div class="inputs-form">
               <div class="input-field" id="line-input">
-                <input type="text" placeholder="Add Event Name" />
+                <input type="text" placeholder="Add Event Name" minlength="3" required/>
               </div>
               <div class="input-field" id="selection-field">
                 <label for="gardens">Pick a Garden</label>
-                <select name="Garden"></select>
+                <select name="Garden" required></select>
                 <!-- <input type="text" placeholder="Choose a Garden" /> -->
               </div>
               <div class="time-inputs">
@@ -149,7 +149,8 @@
                 </button>
               </div>
             </section>
-            <button class="submit-button">Submit</button>
+            <input type="submit" class="submit-button" value="Submit">
+            <!-- <button class="submit-button">Submit</button> -->
           </div>
         </form>
       </div>
