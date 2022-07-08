@@ -111,9 +111,9 @@
               </a>
             </div>
           </section>
-          <section class="category-wrapper gap-4">
+          <section class="category-wrapper gap-4" id="plants-category">
             <h1 class="text-2xl font-semibold mt-3">Grow For The Win</h1>
-            <div class="gardens-container">
+            <div class="gardens-container" id="plant-container">
               <section class="plant-item">
                 <div class="garden-image-edit">
                   <div class="upload-garden-photo">
@@ -174,7 +174,6 @@
                   <button class="editor-button">+</button>
                 </div>
               </section>
-
               <section class="plant-item">
                 <div class="garden-image-edit">
                   <div class="upload-garden-photo">

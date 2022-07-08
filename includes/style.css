@@ -100,6 +100,7 @@ input::placeholder {
   height: 24px;
   padding-left: 16px;
 }
+
 .search {
   width: 90%;
   border-bottom: 1px black solid;
@@ -107,6 +108,7 @@ input::placeholder {
 
 
 .category-wrapper {
+  display: flex;
   flex-direction: column;
   margin-top: 16px;
 }
@@ -116,7 +118,7 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-  gap: 20px;
+  gap: 57px;
 }
 
 .gardens-container:last-child {
@@ -297,6 +299,7 @@ select {
   flex-direction: column;
   gap: 8px;
   align-items: flex-start;
+  place-items: center;
 }
 
 #line-input {
@@ -371,7 +374,10 @@ select {
   min-width: 300px;
   width: 60%;
 }
-.second-comtainer {
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   padding-left: 50px;
 }
@@ -622,7 +628,11 @@ input[value="submit"] {
   z-index: 2;
 }
 
-
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -630,7 +640,28 @@ input[value="submit"] {
     display: hidden;
   }
 }
+
 @media only screen and (max-width: 1152px) {
+  input[value="submit"] {
+    place-self: center;
+  }
+
+  #plants-category {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .new-task {
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+  }
+
+  .new-task > button {
+    place-self: center;
+  }
+
   .time-inputs {
     flex-wrap: wrap;
   }
@@ -646,6 +677,10 @@ input[value="submit"] {
   #comment-profile {
     width: 32px;
     height: 32px;
+  }
+
+  #plant-container {
+    justify-content: center;
   }
 
   .gardens-container > a {
@@ -702,7 +737,7 @@ input[value="submit"] {
     justify-content: center;
   }
 
-  .second-comtainer {
+  .tasks-container {
     padding-top: 20px;
     padding-left: 0px;
   }

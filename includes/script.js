@@ -7,7 +7,7 @@ function addTask(e) {
   let div = document.createElement("div");
   let input = document.createElement("input");
   let img = document.createElement("img");
-  div.setAttribute("class", "flex gap-2 place-items-center");
+  div.setAttribute("class", "flex gap-2");
   
   img.setAttribute("src", "includes/images/icons/remove-plant-icon-22.jpeg");
 
