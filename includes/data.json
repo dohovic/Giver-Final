@@ -88,10 +88,104 @@
     "social": [
         {
             "stories": [
-                {}
+                {
+                    "id" : "1",
+                    "name" : "Eyal",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "2",
+                    "name" : "Aliza",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "3",
+                    "name" : "Lihi",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "4",
+                    "name" : "Roni",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "5",
+                    "name" : "Or",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "6",
+                    "name" : "Sami",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "7",
+                    "name" : "David",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "8",
+                    "name" : "Yitzhak",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "9",
+                    "name" : "Alma",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                }
             ],
             "comments": [
-                {}
+                {
+                    "id" : "1",
+                    "name" : "David",
+                    "comment" : "I made lemonade yesterday from the garden on the old basketball court. Great Stu... ",
+                    "likes" : "9",
+                    "replies" : "14",
+                    "date" : 
+                    {
+                        "month" : "July",
+                        "day" : "7",
+                        "year" : "2022",
+                        "time" : "17:00"
+                    }
+                },
+                {
+                    "id" : "2",
+                    "name" : "Nof",
+                    "comment" : "I can’t believe I have freshly pickeed lemons!",
+                    "likes" : "6",
+                    "replies" : "9",
+                    "date" : 
+                    {
+                        "month" : "July",
+                        "day" : "7",
+                        "year" : "2022",
+                        "time" : "17:00"
+                    }
+                },
+                {
+                    "id" : "3",
+                    "name" : "Yaron",
+                    "comment" : "The cherry tomatoes planting day was great. I can’t wait for the next one.",
+                    "likes" : "16",
+                    "replies" : "12",
+                    "date" : 
+                    {
+                        "month" : "July",
+                        "day" : "7",
+                        "year" : "2022",
+                        "time" : "17:00"
+                    }
+                }
             ]
         }
     ]
