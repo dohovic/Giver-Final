@@ -18,35 +18,38 @@
   </head>
   <body>
     <div class="flex w-screen h-screen">
-      <div class="flex justify-center items-center w-1/2 h-full">
-        <div class="flex justify-center items-center w-3/4 h-full">
-          <div class="flex flex-col justify-center w-full h-full">
-            <h3 class="text-2xl">Login to Giver</h3>
+      <div class="login-wrapper">
+        <div class="login-container">
+          <div class="login-content">
+            <div class="logo">
+              <a href="#" id="logo"></a>
+            </div>
+            <!-- <h3>Log in to Giver</h3> -->
             <p>Come smell the flowers</p>
-            <form action="#" method="post" class="rounded mt-8">
-              <div class="flex flex-col p-4 justify-between border-t border-r border-l border-[#F3F0F0] h-1/3">
-                <label for="username" class="text-sm">Username</label>
-                <input type="text" class="flex border-b-2" placeholder="Your email" required>
+            <form action="#" method="post" class="login-form">
+              <div class="login-field" id="login-username">
+                <label for="username" class="r-label-text">Username</label>
+                <input type="text" class="r-input-text" placeholder="Enter your email" required>
               </div>
-              <div class="flex flex-col p-4 justify-between border border-[#F3F0F0] h-1/3">
-                <label for="password" class="text-sm">Password</label>
-                <input type="password" class="flex border-b-2" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="28" required>
+              <div class="login-field" id="login-pass">
+                <label for="password" class="r-label-text">Password</label>
+                <input type="password" class="r-input-text" placeholder="Enter password" required>
               </div>
-              <div class="flex flex-col justify-between p-4 h-32">
-                <div class="flex flex-row flex-wrap justify-between">
-                  <label for="remember-me" class="flex flex-row items-center">
+              <div class="helpers-container">
+                <div class="login-helpers">
+                  <label for="remember-me" class="r-label-text">
                     <input type="checkbox" class="mr-1">  
-                    <span class="r-sm-text" class="text-sm">Remember me</span>
+                    Remember me
                   </label>
-                  <span><a href="#" class="r-sm-text" class="text-sm">Forgot password?</a></span>
+                  <a href="#" class="r-label-text">Forgot password?</a>
                 </div>
-                <input type="submit" value="Log In" class="mt-4 rounded-md bg-[#45A1BD] w-full h-12">
+                <input type="submit" value="Log In" class="login-button">
               </div>
             </form>
           </div>
         </div>
       </div>
-      <div class="bg-cover bg-center bg-right-top bg-[url('assetts/login5.png')] w-1/2 h-full"></div>
+      <div class="login-img"></div>
     </div>
   </body>
 </html>
