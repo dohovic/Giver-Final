@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link
+    <!-- <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link
@@ -21,7 +22,7 @@
         <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
       </div>
       <div class="logo">
-        <a href="index.html" id="logo"></a>
+        <a href="index.php" id="logo"></a>
       </div>
       <nav
         class="self-center justify-self-center justify-items-center hidden lg:block"
@@ -39,7 +40,7 @@
           </li>
           <li>
             <a
-              href="./create-garden.html"
+              href="./create-garden.php"
               class="grid gap-3 p-2 w-40 h-12 items-center"
             >
               <img
@@ -61,7 +62,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+            <a href="create-event.php" class="grid gap-3 p-2 w-40 h-12 items-center">
               <img
                 src="includes/images/icons/icon-eventNew.png"
                 alt=""
