@@ -17,39 +17,41 @@
       <title>Login</title>
   </head>
   <body>
-    <div class="flex w-screen h-screen">
-      <div class="login-wrapper">
-        <div class="login-container">
-          <div class="login-content">
-            <div class="logo">
-              <a href="#" id="logo"></a>
-            </div>
-            <!-- <h3>Log in to Giver</h3> -->
-            <p>Come smell the flowers</p>
-            <form action="#" method="post" class="login-form">
-              <div class="login-field" id="login-username">
-                <label for="username" class="r-label-text">Username</label>
-                <input type="text" class="r-input-text" placeholder="Enter your email" required>
+    <main>
+      <div class="flex w-screen h-screen">
+        <div class="login-wrapper">
+          <div class="login-container">
+            <div class="login-content">
+              <div class="logo">
+                <a href="#" id="logo"></a>
               </div>
-              <div class="login-field" id="login-pass">
-                <label for="password" class="r-label-text">Password</label>
-                <input type="password" class="r-input-text" placeholder="Enter password" required>
-              </div>
-              <div class="helpers-container">
-                <div class="login-helpers">
-                  <label for="remember-me" class="r-label-text">
-                    <input type="checkbox" class="mr-1">  
-                    Remember me
-                  </label>
-                  <a href="#" class="r-label-text">Forgot password?</a>
+              <!-- <h3>Log in to Giver</h3> -->
+              <p>Come smell the flowers</p>
+              <form action="#" method="post" class="login-form">
+                <div class="login-field" id="login-username">
+                  <label for="username" class="r-label-text">Username</label>
+                  <input type="text" class="r-input-text" placeholder="Enter your email" required>
                 </div>
-                <input type="submit" value="Log In" class="login-button">
-              </div>
-            </form>
+                <div class="login-field" id="login-pass">
+                  <label for="password" class="r-label-text">Password</label>
+                  <input type="password" class="r-input-text" placeholder="Enter password" required>
+                </div>
+                <div class="helpers-container">
+                  <div class="login-helpers">
+                    <label for="remember-me" class="r-label-text">
+                      <input type="checkbox" class="mr-1">  
+                      Remember me
+                    </label>
+                    <a href="#" class="r-label-text">Forgot password?</a>
+                  </div>
+                  <input type="submit" value="Log In" class="login-button">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+        <div class="login-img"></div>
       </div>
-      <div class="login-img"></div>
-    </div>
+    </main>
   </body>
 </html>
