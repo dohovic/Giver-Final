@@ -724,7 +724,7 @@ input[value="submit"] {
   }
 
   .garden-item {
-    min-width: 320px;
+    min-width: 40vw;
   }
 
   .category-wrapper {
@@ -931,6 +931,10 @@ input[value="Log In"] {
 }
 
 @media (max-width: 440px) {
+  .garden-item {
+    min-width: 85vw;
+  }
+
   .r-input-text {
     place-self: center;
   }
