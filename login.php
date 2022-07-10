@@ -43,8 +43,8 @@
                       Remember me
                     </label>
                     <a href="#" class="r-label-text">Forgot password?</a>
+                    <input type="submit" value="Log In">
                   </div>
-                  <input type="submit" value="Log In">
                 </div>
               </form>
             </div>
