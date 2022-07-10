@@ -301,7 +301,7 @@ select {
   flex-direction: column;
   gap: 8px;
   align-items: flex-start;
-  place-items: center;
+  /* place-items: center; */
 }
 
 #line-input {
@@ -651,7 +651,6 @@ input[value="submit"] {
   flex-direction: column;
   justify-content: center;
 }
-
 
 @media only screen and (max-width: 1000px) {
   nav {
