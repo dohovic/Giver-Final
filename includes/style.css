@@ -820,7 +820,7 @@ input[value="submit"] {
 
 .login-content p {
   margin-top: 0.25rem;
-  font-size: 1rem; 
+  font-size: 0.8rem; 
   line-height: 1.5rem;
 }
 
@@ -920,7 +920,7 @@ input[value="Log In"] {
   height: 8rem; */
 }
 
-@media (max-width: 428px) {
+@media (max-width: 440px) {
   .r-input-text {
     place-self: center;
   }
