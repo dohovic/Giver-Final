@@ -399,8 +399,8 @@ select {
 
 .garden-image-edit {
   display: grid;
-  max-width: 424px;
-  max-height: 272px;
+  max-width: 100%;
+  max-height: 100%;
   align-content: center;
   justify-content: center;
 
@@ -734,6 +734,10 @@ input[value="submit"] {
 }
 
 @media (max-width: 990px) {
+  #plant-container {
+    justify-content: space-around;
+  }
+
   .gardens-container {
     justify-content: center;
   }
@@ -963,7 +967,7 @@ input[value="Log In"] {
   }
 
   .plant-item {
-    min-width: 72vw;
+    min-width: 90vw;
   }
 
   #plant-container {
@@ -972,8 +976,12 @@ input[value="Log In"] {
 }
 
 @media (max-width: 440px) {
+  .garden-item {
+    min-width: 90vw;
+  }
+
   .plant-item {
-    min-width: 85vw;
+    min-width: 90vw;
   }
 
   .r-input-text {
