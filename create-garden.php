@@ -100,7 +100,7 @@
                 ></textarea>
               </div>
             </div>
-            <div>
+            <div class="image-input-container">
               <a href="#">
                 <div class="garden-image-input">
                   <div class="upload-garden-photo">

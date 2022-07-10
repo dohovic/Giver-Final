@@ -239,9 +239,9 @@ input::placeholder {
 
 .input-field {
   display: flex;
-  max-width: 898px;
-  min-width: 300px;
-  height: 48px;
+  /* max-width: 898px;
+  min-width: 300px; */
+  /* height: 48px; */
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
@@ -357,6 +357,7 @@ select {
 
   background-color: transparent;
 }
+
 #line-input > input {
   outline: none;
   width: 100%;
@@ -369,7 +370,7 @@ select {
   flex-wrap: wrap;
   margin: 0px auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .inputs-form{
@@ -423,6 +424,10 @@ select {
   margin: 4px;
 }
 
+.image-input-container {
+  width: auto;
+  min-width: 1rem;
+}
 
 #item-display {
   border-bottom-left-radius: 0px;
@@ -946,6 +951,18 @@ input[value="Log In"] {
 }
 
 @media (max-width: 599px) {
+  input::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  textarea::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .plant-item {
     min-width: 72vw;
   }
@@ -1060,9 +1077,15 @@ input[value="Log In"] {
     align-content: center; */
   }
 
-  input::placeholder {
+  /* input::placeholder {
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  textarea::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  } */
 }
