@@ -148,12 +148,12 @@ input::placeholder {
 .plant-item {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  /* width: 30%; */
   /* flex-basis: min-content; */
-  /* max-width: 424px; */
+  max-width: 22vw;
   /* max-height: 264px; */
-  min-width: 160px;
-  min-height: 176px;
+  /* min-width: 160px; */
+  /* min-height: 176px; */
   align-items: center;
   justify-content: space-between;
   font-style: normal;
@@ -465,6 +465,16 @@ select {
   background: #f3f0f0;
 }
 
+#plant-container {
+  justify-content: space-between;
+}
+
+#plants-category {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
 .plant-amount > input {
   width: auto;
   outline: none;
@@ -682,9 +692,9 @@ input[value="submit"] {
     height: 32px;
   }
 
-  #plant-container {
+  /* #plant-container {
     justify-content: center;
-  }
+  } */
 
   /* .gardens-container > a {
     display: flex;
@@ -718,12 +728,17 @@ input[value="submit"] {
     justify-content: center;
   }
 }
+
 @media (max-width: 990px) {
   .gardens-container {
     justify-content: center;
   }
 
   .garden-item {
+    min-width: 40vw;
+  }
+
+  .plant-item {
     min-width: 40vw;
   }
 
@@ -782,14 +797,14 @@ input[value="submit"] {
     font-size: medium;
   }
 
-  .plant-item {
+  /* .plant-item {
     flex: 0 1;
     flex-shrink: 2;
-  }
+  } */
 
-  .plant-amount-editor {
+  /* .plant-amount-editor {
     width: 160px; 
-  }
+  } */
 
   .garden-image-edit > :nth-child(2) {
     width: 24px;
@@ -930,8 +945,18 @@ input[value="Log In"] {
   height: 8rem; */
 }
 
+@media (max-width: 599px) {
+  .plant-item {
+    min-width: 72vw;
+  }
+
+  #plant-container {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 440px) {
-  .garden-item {
+  .plant-item {
     min-width: 85vw;
   }
 
@@ -1041,4 +1066,3 @@ input[value="Log In"] {
     line-height: 1.5rem;
   }
 }
-
