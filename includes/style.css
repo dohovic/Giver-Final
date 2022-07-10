@@ -63,7 +63,7 @@ li a:hover {
 .main-wrapper {
   margin-top: 10px;
   margin: 0px auto;
-  max-width: 1374px;
+  max-width: 100%;
 }
 
 .search-bar {
@@ -111,6 +111,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
+  width: 100%;
 }
 
 
@@ -133,7 +134,8 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   /* flex-basis: min-content; */
-  max-width: 320px;
+  /* width: 22vw; */
+  max-width: 22vw;
   /* max-height: 264px; */
   min-width: 160px;
   /* min-height: 176px; */
@@ -684,15 +686,15 @@ input[value="submit"] {
     justify-content: center;
   }
 
-  .gardens-container > a {
+  /* .gardens-container > a {
     display: flex;
     flex-basis: min-content;
-  }
+  } */
 
-  .garden-item {
+  /* .garden-item {
     flex-shrink: 2;
     flex-basis: auto;
-  }
+  } */
 
   /* .plant-item {
     flex: 0 1;
@@ -719,6 +721,10 @@ input[value="submit"] {
 @media (max-width: 990px) {
   .gardens-container {
     justify-content: center;
+  }
+
+  .garden-item {
+    min-width: 320px;
   }
 
   .category-wrapper {
@@ -757,6 +763,10 @@ input[value="submit"] {
 
   /* .gardens-container {
     justify-content: space-around;
+  } */
+
+  /* .garden-image {
+    width: 100%;
   } */
 
   .category-wrapper {
