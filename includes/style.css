@@ -889,19 +889,16 @@ input[value="submit"] {
 }
 
 .r-label-text {
-  /* text-sm */
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem; 
   line-height: 1.25rem; 
 }
 
 .r-input-text {
-  /* flex border-b-2 */
   display: flex;
   border-bottom-width: 2px;
 }
 
 .login-helpers {
-  /* flex flex-row flex-wrap justify-between */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -910,7 +907,6 @@ input[value="submit"] {
 }
 
 .label-remember {
-  /* flex flex-row items-center */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -954,6 +950,14 @@ input[value="Log In"] {
 }
 
 @media (max-width: 599px) {
+  .login-helpers {
+    justify-content: center;
+  }
+
+  .login-content .logo, p {
+    place-self: center;
+  }
+
   .r-label-text {
     text-align: center;
   }
@@ -993,7 +997,7 @@ input[value="Log In"] {
   }
 
   .login-container {
-    width: 80%;
+    width: 90%;
   }
 
   .login-field {
