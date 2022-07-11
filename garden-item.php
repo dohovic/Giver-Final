@@ -72,6 +72,12 @@
             </a>
           </li>
         </ul>
+        <form action="#" method="GET" class="mt-8">
+          <div class="search-bar">
+            <button id="search-icon" type="submit"></button>
+            <input type="text" placeholder="Search" class="search" />
+          </div>
+        </form>
       </nav>
       <div class="edit-icons grid place-items-center">
         <div>
@@ -84,12 +90,6 @@
     </header>
     <main class="mt-10">
       <div class="main-wrapper">
-        <form action="#" method="GET">
-          <div class="search-bar">
-            <button id="search-icon" type="submit"></button>
-            <input type="text" placeholder="Search" class="search" />
-          </div>
-        </form>
         <section class="input-container">
           <div>
             <div class="input-field">
