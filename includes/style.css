@@ -906,7 +906,7 @@ input[value="submit"] {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .label-remember {
@@ -954,6 +954,10 @@ input[value="Log In"] {
 }
 
 @media (max-width: 599px) {
+  .r-label-text {
+    text-align: center;
+  }
+
   input::placeholder {
     text-align: center;
     font-size: 1rem;
@@ -1095,4 +1099,11 @@ input[value="Log In"] {
     font-size: 1rem;
     line-height: 1.5rem;
   } */
+}
+
+@media (max-height: 380px) {
+  .login-field {
+    padding: 0.5rem;;
+    gap: 0.25rem;
+  }
 }
