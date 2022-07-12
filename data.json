@@ -1,0 +1,192 @@
+{
+    "addresses": [
+        {
+            "id": "1",
+            "street": "Jabotinsky",
+            "number": "16",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "2",
+            "street": "Hamatmid",
+            "number": "16",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "3",
+            "street": "Assaf",
+            "number": "13",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "4",
+            "street": "Yokhanan",
+            "number": "5",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "5",
+            "street": "Rokach",
+            "number": "34",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "6",
+            "street": "Shkedia",
+            "number": "31",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "7",
+            "street": "Herzel",
+            "number": "75",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "8",
+            "street": "Ami",
+            "number": "4",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "9",
+            "street": "Pnei Hagiv'a",
+            "number": "29",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "10",
+            "street": "Bialik",
+            "number": "38",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "11",
+            "street": "Hagefen",
+            "number": "12",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        },
+        {
+            "id": "12",
+            "street": "Hadar",
+            "number": "6",
+            "city": "Ramat-Gan",
+            "country": "Israel"
+        }
+    ],
+    "social": [
+        {
+            "stories": [
+                {
+                    "id" : "1",
+                    "name" : "Eyal",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "2",
+                    "name" : "Aliza",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "3",
+                    "name" : "Lihi",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "4",
+                    "name" : "Roni",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "5",
+                    "name" : "Or",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "6",
+                    "name" : "Sami",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "7",
+                    "name" : "David",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "8",
+                    "name" : "Yitzhak",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                },
+                {
+                    "id" : "9",
+                    "name" : "Alma",
+                    "prfile_img" : "",
+                    "story_img" : ""
+                }
+            ],
+            "comments": [
+                {
+                    "id" : "1",
+                    "name" : "David",
+                    "comment" : "I made lemonade yesterday from the garden on the old basketball court. Great Stu... ",
+                    "likes" : "9",
+                    "replies" : "14",
+                    "date" : 
+                    {
+                        "month" : "July",
+                        "day" : "7",
+                        "year" : "2022",
+                        "time" : "17:00"
+                    }
+                },
+                {
+                    "id" : "2",
+                    "name" : "Nof",
+                    "comment" : "I can’t believe I have freshly pickeed lemons!",
+                    "likes" : "6",
+                    "replies" : "9",
+                    "date" : 
+                    {
+                        "month" : "July",
+                        "day" : "7",
+                        "year" : "2022",
+                        "time" : "17:00"
+                    }
+                },
+                {
+                    "id" : "3",
+                    "name" : "Yaron",
+                    "comment" : "The cherry tomatoes planting day was great. I can’t wait for the next one.",
+                    "likes" : "16",
+                    "replies" : "12",
+                    "date" : 
+                    {
+                        "month" : "July",
+                        "day" : "7",
+                        "year" : "2022",
+                        "time" : "17:00"
+                    }
+                }
+            ]
+        }
+    ]
+}
