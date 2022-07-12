@@ -63,7 +63,7 @@ li a:hover {
 .main-wrapper {
   margin-top: 10px;
   margin: 0px auto;
-  max-width: 1374px;
+  max-width: 100%;
 }
 
 .search-bar {
@@ -110,6 +110,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
+  width: 100%;
 }
 
 .gardens-container {
@@ -131,7 +132,8 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   /* flex-basis: min-content; */
-  max-width: 320px;
+  /* width: 22vw; */
+  max-width: 22vw;
   /* max-height: 264px; */
   min-width: 160px;
   /* min-height: 176px; */
@@ -144,12 +146,12 @@ input::placeholder {
 .plant-item {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  /* width: 30%; */
   /* flex-basis: min-content; */
-  /* max-width: 424px; */
+  max-width: 22vw;
   /* max-height: 264px; */
-  min-width: 160px;
-  min-height: 176px;
+  /* min-width: 160px; */
+  /* min-height: 176px; */
   align-items: center;
   justify-content: space-between;
   font-style: normal;
@@ -235,9 +237,9 @@ input::placeholder {
 
 .input-field {
   display: flex;
-  max-width: 898px;
-  min-width: 300px;
-  height: 48px;
+  /* max-width: 898px;
+  min-width: 300px; */
+  /* height: 48px; */
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
@@ -353,6 +355,7 @@ select {
 
   background-color: transparent;
 }
+
 #line-input > input {
   outline: none;
   width: 100%;
@@ -365,7 +368,7 @@ select {
   flex-wrap: wrap;
   margin: 0px auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .inputs-form {
@@ -422,6 +425,12 @@ select {
   margin: 4px;
 }
 
+.image-input-container {
+  width: auto;
+  min-width: 1rem;
+}
+
+
 #item-display {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -461,6 +470,16 @@ select {
   align-items: center;
 
   background: #f3f0f0;
+}
+
+#plant-container {
+  justify-content: space-between;
+}
+
+#plants-category {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
 }
 
 .plant-amount > input {
@@ -675,19 +694,19 @@ input[value="submit"] {
     height: 32px;
   }
 
-  #plant-container {
+  /* #plant-container {
     justify-content: center;
-  }
+  } */
 
-  .gardens-container > a {
+  /* .gardens-container > a {
     display: flex;
     flex-basis: min-content;
-  }
+  } */
 
-  .garden-item {
+  /* .garden-item {
     flex-shrink: 2;
     flex-basis: auto;
-  }
+  } */
 
   /* .plant-item {
     flex: 0 1;
@@ -711,9 +730,18 @@ input[value="submit"] {
     justify-content: center;
   }
 }
+
 @media (max-width: 990px) {
   .gardens-container {
     justify-content: center;
+  }
+
+  .garden-item {
+    min-width: 40vw;
+  }
+
+  .plant-item {
+    min-width: 40vw;
   }
 
   .category-wrapper {
@@ -754,6 +782,10 @@ input[value="submit"] {
     justify-content: space-around;
   } */
 
+  /* .garden-image {
+    width: 100%;
+  } */
+
   .category-wrapper {
     display: flex;
     flex-direction: column;
@@ -767,14 +799,15 @@ input[value="submit"] {
     font-size: medium;
   }
 
-  .plant-item {
+  /* .plant-item {
     flex: 0 1;
     flex-shrink: 2;
-  }
+  } */
 
-  .plant-amount-editor {
-    width: 160px;
-  }
+  /* .plant-amount-editor {
+    width: 160px; 
+  } */
+
 
   .garden-image-edit > :nth-child(2) {
     width: 24px;
@@ -914,7 +947,33 @@ input[value="Log In"] {
   height: 8rem; */
 }
 
+@media (max-width: 599px) {
+  input::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  textarea::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .plant-item {
+    min-width: 72vw;
+  }
+
+  #plant-container {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 440px) {
+  .plant-item {
+    min-width: 85vw;
+  }
+
   .r-input-text {
     place-self: center;
   }
@@ -1014,9 +1073,17 @@ input[value="Log In"] {
     align-content: center; */
   }
 
-  input::placeholder {
+  /* input::placeholder {
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+
+  textarea::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  } */
 }
+

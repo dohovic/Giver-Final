@@ -167,7 +167,6 @@ if (!empty($_SESSION["user"])) {
                                 <button class="editor-button" type="button" onclick="increasePlant(this)">+</button>
                             </div>
                         </section> -->
-
                         <button class="plant-item" type="button" onclick="addPlant()">
                             <div class=" garden-image-edit">
                                 <div class="upload-garden-photo">
