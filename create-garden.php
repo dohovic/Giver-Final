@@ -168,6 +168,7 @@ if (!empty($_SESSION["user"])) {
                             </div>
                         </section> -->
 
+
                         <button class="plant-item" type="button" onclick="addPlant()">
                             <div class=" garden-image-edit">
                                 <div class="upload-garden-photo">
