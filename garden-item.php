@@ -91,7 +91,7 @@
     <main class="mt-10">
       <div class="main-wrapper">
         <section class="input-container">
-          <div>
+          <div class="inputs-form">
             <div class="input-field">
               <span class="garden-detail" id="garden-name">Lemons garden</span>
             </div>

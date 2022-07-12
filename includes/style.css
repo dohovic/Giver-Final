@@ -546,7 +546,7 @@ input[value="submit"] {
   display: flex;
   flex-direction: row;
   max-width: 848px;
-  height: 200px;
+  height: 12rem;
   padding: 20px;
 
   border: 0px solid;
@@ -607,7 +607,7 @@ input[value="submit"] {
   padding: 6px;
   z-index: 3;
   font-size: 12px;
-  height: 100px;
+  height: 3.75rem;
 }
 
 #story-profile > span {
@@ -616,7 +616,7 @@ input[value="submit"] {
 
 .story-container{
   max-width: 424px;
-  gap:24px;
+  gap:1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
