@@ -576,7 +576,7 @@ input[value="submit"] {
 .comment-container {
   display: flex;
   flex-direction: row;
-  max-width: 848px;
+  /* max-width: 848px; */
   height: 12rem;
   padding: 20px;
 
@@ -617,9 +617,10 @@ input[value="submit"] {
 
 .social-comments {
   display: flex;
+  width: 63%;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 20px;
+  /* justify-content: space-around; */
+  gap: 3rem;
 }
 
 .social-profile {
@@ -646,11 +647,13 @@ input[value="submit"] {
 }
 
 .story-container{
-  max-width: 424px;
-  gap:1rem;
+  /* max-width: 424px; */
+  width: 30%;
+  height: 100%;
+  gap: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* margin: 0px auto; */
   /* align-items: center; */
 }
@@ -658,7 +661,7 @@ input[value="submit"] {
 .story-desktop {
   display: flex;
   /* width: 104px; */
-  height: 200px;
+  /* height: 200px; */
   /* padding: 6px; */
   align-items: end;
   justify-content: center;
@@ -671,8 +674,8 @@ input[value="submit"] {
 }
 
 .story-pic-container {
-  max-width: 104px;
-  height: 200px;
+  max-width: 6.2rem;
+  /* height: 200px; */
   position: relative;
   z-index: 2;
 }
@@ -769,6 +772,16 @@ input[value="submit"] {
 }
 
 @media (max-width: 990px) {
+  .story-container{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .social-comments {
+    width: 100%;
+    gap: 1rem;
+  }
+
   #plant-container {
     justify-content: space-around;
   }
@@ -778,7 +791,7 @@ input[value="submit"] {
   }
 
   .garden-item {
-    min-width: 40vw;
+    min-width: 43vw;
   }
 
   .plant-item {
@@ -811,7 +824,7 @@ input[value="submit"] {
   }
 
   .story-container{
-    gap:5px;
+    gap: 3rem;
   }
 
   .main-wrapper {
@@ -1010,7 +1023,7 @@ input[value="Log In"] {
   }
 
   .plant-item {
-    min-width: 90vw;
+    max-width: 100%;
   }
 
   #plant-container {
