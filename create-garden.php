@@ -152,11 +152,11 @@ if (!empty($_SESSION["user"])) {
                 <section class="category-wrapper gap-4" id="plants-category">
                     <h1 class="text-2xl font-semibold mt-3">Grow For The Win</h1>
                     <div class="gardens-container" id="plant-container">
-                        <!-- <section class="plant-item">
+                        <section class="plant-item">
                             <div class='garden-image-edit'>
-                              <div class='upload-garden-photo'>
+                              <button class='upload-garden-photo'>
                                   <img src='./includes/images/icons/add-photo-garden.png' alt='' />
-                              </div>
+                              </button>
                               <button class="upload-garden-x">
                                   <img src="./includes/images/icons/circle-x.png" alt="" />
                               </button>
@@ -170,7 +170,7 @@ if (!empty($_SESSION["user"])) {
                                 </div>
                                 <button class="editor-button" type="button" onclick="increasePlant(this)">+</button>
                             </div>
-                        </section> -->
+                        </section>
 
 
                         <button class="plant-item" type="button" onclick="addPlant()">
