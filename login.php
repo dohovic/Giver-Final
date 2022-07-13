@@ -13,7 +13,7 @@ if (!empty($_POST["loginMail"])) {
         session_start();
         $_SESSION["user"] = $row['id'];
         echo $_SESSION["user"];
-        header('Location: ' . 'http://localhost/Giver/Giver-Final/');
+        header('Location: ' . 'http://se.shenkar.ac.il/students/2021-2022/web1/dev_203/');
     } else {
         $message = "Failed to log in. Bad email or password.";
     }
