@@ -179,9 +179,9 @@ if (!empty($_SESSION["user"])) {
             </form>
         </div>
     </main>
-    <!-- <script>
-        window.onload = () => loadAddresses;
-    </script> -->
+    <script>
+    window.onload = () => loadAddresses();
+    </script>
 </body>
 
 </html>
