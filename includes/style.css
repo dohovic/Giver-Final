@@ -106,14 +106,12 @@ input::placeholder {
   border-bottom: 1px black solid;
 }
 
-
 .category-wrapper {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
   width: 100%;
 }
-
 
 .gardens-container {
   display: flex;
@@ -263,7 +261,7 @@ select {
   flex-direction: row;
 }
 
-.edit-icons{
+.edit-icons {
   vertical-align: middle;
 }
 
@@ -373,7 +371,7 @@ select {
   justify-content: space-between;
 }
 
-.inputs-form{
+.inputs-form {
   min-width: 300px;
   width: 60%;
 }
@@ -403,8 +401,11 @@ select {
   max-height: 100%;
   align-content: center;
   justify-content: center;
-
   background: #f3f0f0;
+}
+
+.garden-image-edit {
+  text-align: center;
 }
 
 .garden-image-edit > :nth-child(2) {
@@ -423,6 +424,7 @@ select {
   justify-self: center;
   margin: 4px;
 }
+
 
 .image-input-container {
   width: auto;
@@ -487,6 +489,11 @@ select {
 
   background-color: transparent;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .plant-amount > input::placeholder {
   text-align: center;
@@ -504,20 +511,11 @@ select {
   align-items: center;
 }
 
-/* .submit-button {
-  width: 144px;
-  height: 48px;
-  margin-top: 16px;
-
-  border-radius: 15px;
-  background-color: #f3f0f0;
-} */
-
 input[value="submit"] {
   width: 144px;
   height: 48px;
   margin-top: 16px;
-  
+
   border-radius: 15px;
   background-color: #f3f0f0;
 }
@@ -614,7 +612,7 @@ input[value="submit"] {
   font-size: 12px;
 }
 
-.story-container{
+.story-container {
   max-width: 424px;
   gap:1rem;
   display: flex;
@@ -687,7 +685,7 @@ input[value="submit"] {
     justify-content: space-around;
   }
 
-  .social-profile > span{
+  .social-profile > span {
     font-size: 12px;
   }
 
@@ -771,12 +769,12 @@ input[value="submit"] {
     padding-top: 20px;
     padding-left: 0px;
   }
-  .garden-image-input{
+  .garden-image-input {
     width: 300px;
   }
 
-  .story-container{
-    gap:5px;
+  .story-container {
+    gap: 5px;
   }
 
   .main-wrapper {
@@ -810,9 +808,11 @@ input[value="submit"] {
     flex-shrink: 2;
   } */
 
+
   /* .plant-amount-editor {
     width: 160px; 
   } */
+
 
   .garden-image-edit > :nth-child(2) {
     width: 24px;
@@ -825,7 +825,7 @@ input[value="submit"] {
   /* .category-wrapper > h2 {
     align-self: flex-start;
     font-size: medium;
-  } */ 
+  } */
 }
 
 .login-container {
@@ -848,12 +848,12 @@ input[value="submit"] {
 
 .login-content h3 {
   font-size: 1.5rem;
-  line-height: 2rem; 
+  line-height: 2rem;
 }
 
 .login-content p {
   margin-top: 0.25rem;
-  font-size: 0.8rem; 
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -872,9 +872,8 @@ input[value="submit"] {
   flex-direction: column;
   padding: 1rem;
   justify-content: space-between;
-  gap: 1rem;
-  /* height: 40%; */
-  border-color: #F3F0F0;
+  height: 40%;
+  border-color: #f3f0f0;
 }
 
 #login-username {
@@ -915,7 +914,7 @@ input[value="submit"] {
 input[value="Log In"] {
   margin-top: 3%;
   border-radius: 0.375rem;
-  background-color: #45A1BD;
+  background-color: #45a1bd;
   width: 100%;
   height: 2rem;
   font-size: 1rem;
@@ -1008,7 +1007,7 @@ input[value="Log In"] {
   input[value="Log In"] {
     margin-top: 1rem;
     border-radius: 0.375rem;
-    background-color: #45A1BD;
+    background-color: #45a1bd;
     width: 100%;
     height: 3rem;
   }
@@ -1050,13 +1049,13 @@ input[value="Log In"] {
   .logo {
     place-self: center;
   }
-  
+
   .login-content p {
     place-self: center;
     font-size: 0.625rem;
     line-height: 1rem;
   }
-  
+
   .r-label-text {
     place-self: center;
     font-size: 0.75rem; /* 12px */
@@ -1080,7 +1079,6 @@ input[value="Log In"] {
   .r-form-wrapper {
     display: flex;
     width: 100%;
-    
   }
 
   .r-form-container {
