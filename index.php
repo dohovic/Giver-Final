@@ -2,7 +2,7 @@
 session_start();
 echo $_SESSION["user"];
 if (empty($_SESSION["user"])) {
-    header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
+    header('Location: ' . 'http://localhost/mac/giver/index.php');
 }
 ?>
 

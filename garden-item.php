@@ -91,7 +91,7 @@
     <main class="mt-10">
       <div class="main-wrapper">
         <section class="input-container">
-          <div>
+          <div class="inputs-form">
             <div class="input-field">
               <span class="garden-detail" id="garden-name">Lemons garden</span>
             </div>
@@ -117,7 +117,7 @@
           </div>
         </section>
         <section class="category-wrapper">
-          <h1 class="text-2xl font-semibold mt-3">Our Giving Plants</h1>
+          <h1 class="text-2xl font-semibold">Our Giving Plants</h1>
           <div class="gardens-container gap-12">
             <section class="plant-item">
               <div class="garden-image" id="item-display">

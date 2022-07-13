@@ -29,8 +29,8 @@ function addPlant() {
   const section = document.createElement("section");
   section.setAttribute("class", "plant-item");
   section.innerHTML =
-    "<div class='garden-image-edit'><div class='upload-garden-photo'><img src='./includes/images/icons/add-photo-garden.png' alt='' /></div></div><input type='text' placeholder='Add Plant Name' name='plant_name[]' required></input><input type='hidden' name='owner_id' value='<?php echo $_SESSION['user'] ?></input><div class=' plant-amount-editor'><button class='editor-button' type='button' onclick='decreasePlant(this)'>-</button><div class='plant-amount'><input type='number' required placeholder='0' name='amount[]'></input></div><button class='editor-button' type='button' onclick='increasePlant(this)'>+</button></div>";
-  plants.insertBefore(section, plants.firstChild);
+    "<div class='garden-image-edit'><div class='upload-garden-photo'><img src='./includes/images/icons/add-photo-garden.png' alt='' /></div></div><input type='text' min='0' placeholder='Add Plant Name' name='plant_name[]' required></input><input type='hidden' name='owner_id' value='<?php echo $_SESSION['user'] ?></input><div class=' plant-amount-editor'><button class='editor-button' type='button' onclick='decreasePlant(this)'>-</button><div class='plant-amount'><input type='number' required placeholder='0' name='amount[]'></input></div><button class='editor-button' type='button' onclick='increasePlant(this)'>+</button></div>";
+  plants.insertBefore(section, plants.lastChild);
 }
 function test(e) {
   console.log(e);

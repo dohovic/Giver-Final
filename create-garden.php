@@ -52,14 +52,13 @@ if (!empty($_SESSION["user"])) {
         }
     }
 } else {
-    header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
+    header('Location: ' . 'http://localhost/mac/Giver/login.php');
 }
 
 ?>
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -67,7 +66,10 @@ if (!empty($_SESSION["user"])) {
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
-    <script src="includes/script.js"></script>
+    <script src="./includes/script.js"></script>
+    <script>
+        window.onload = () => loadAddresses;
+    </script>
     <title>Giver - CreateGarden</title>
 </head>
 
@@ -139,12 +141,11 @@ if (!empty($_SESSION["user"])) {
                     </div>
                     <div>
                         <a href=" #">
-                            <div class="garden-image-input">
-                                <div class="upload-garden-photo">
-                                    <img src="includes/images/icons/add-image-garden-icon.png" alt="" />
-                                </div>
-                                <span>Garden Photo</span>
+                          <div class="garden-image-input">
+                            <div class="garden-cover-image">
+                              <img src="./includes/images/icons/add-image-garden-icon.png" alt="" />
                             </div>
+                          </div>
                         </a>
                     </div>
                 </section>
@@ -177,17 +178,18 @@ if (!empty($_SESSION["user"])) {
                             </div>
                         </button>
                     </div>
+                    <input type="submit" value="submit">
                 </section>
-                <button class="editor-button" type="submit">submit</button>
+                <!-- <button class="editor-button" type="submit">submit</button> -->
 
 
 
             </form>
         </div>
     </main>
-    <script>
-        window.onload = () => loadAddresses();
-    </script>
+    <!-- <script>
+        window.onload = () => loadAddresses;
+    </script> -->
 </body>
 
 </html>
