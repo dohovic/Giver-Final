@@ -106,12 +106,15 @@ input::placeholder {
   border-bottom: 1px black solid;
 }
 
+
 .category-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
+
 
 .gardens-container {
   display: flex;
@@ -133,9 +136,9 @@ input::placeholder {
   flex-direction: column;
   /* flex-basis: min-content; */
   /* width: 22vw; */
-  max-width: 22vw;
+  max-width: 20vw;
   /* max-height: 264px; */
-  min-width: 160px;
+  /* min-width: 160px; */
   /* min-height: 176px; */
   justify-content: space-between;
   font-style: normal;
@@ -143,12 +146,16 @@ input::placeholder {
   font-size: 14px;
 }
 
+.upload-garden-x {
+  place-self: start;
+}
+
 .plant-item {
   display: flex;
   flex-direction: column;
   /* width: 30%; */
   /* flex-basis: min-content; */
-  max-width: 22vw;
+  max-width: 20vw;
   /* max-height: 264px; */
   /* min-width: 160px; */
   /* min-height: 176px; */
@@ -157,6 +164,11 @@ input::placeholder {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+}
+
+.plant-item input {
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .garden-address {
@@ -261,7 +273,7 @@ select {
   flex-direction: row;
 }
 
-.edit-icons {
+.edit-icons{
   vertical-align: middle;
 }
 
@@ -371,7 +383,7 @@ select {
   justify-content: space-between;
 }
 
-.inputs-form {
+.inputs-form{
   min-width: 300px;
   width: 60%;
 }
@@ -387,7 +399,7 @@ select {
   display: flex;
   flex-direction: column;
   width: 424px;
-  height: 272px;
+  height: 303px;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -397,24 +409,25 @@ select {
 
 .garden-image-edit {
   display: grid;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
   align-content: center;
   justify-content: center;
+  border-radius: 15px;
   background: #f3f0f0;
 }
 
-.garden-image-edit {
-  text-align: center;
+.garden-cover-image {
+  max-width: 30%;
 }
 
 .garden-image-edit > :nth-child(2) {
-  width: 42px;
-  height: 42px;
+  max-width: 20vw;
   position: absolute;
   margin: 12px;
-  align-self: end;
   justify-self: end;
+  border-radius: 15px;
 }
 
 .garden-image-input .upload-garden-photo {
@@ -424,7 +437,6 @@ select {
   justify-self: center;
   margin: 4px;
 }
-
 
 .image-input-container {
   width: auto;
@@ -472,8 +484,18 @@ select {
   background: #f3f0f0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
 #plant-container {
-  justify-content: space-between;
+  justify-content: start;
 }
 
 #plants-category {
@@ -488,11 +510,6 @@ select {
   text-align: center;
 
   background-color: transparent;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .plant-amount > input::placeholder {
@@ -511,11 +528,25 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
-input[value="submit"] {
+/* .submit-button {
   width: 144px;
   height: 48px;
   margin-top: 16px;
 
+  border-radius: 15px;
+  background-color: #f3f0f0;
+} */
+
+#create-garden-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input[value="submit"] {
+  width: 144px;
+  height: 48px;
+  margin-top: 16px;
+  
   border-radius: 15px;
   background-color: #f3f0f0;
 }
@@ -544,7 +575,7 @@ input[value="submit"] {
   display: flex;
   flex-direction: row;
   max-width: 848px;
-  height: 200px;
+  height: 12rem;
   padding: 20px;
 
   border: 0px solid;
@@ -605,16 +636,16 @@ input[value="submit"] {
   padding: 6px;
   z-index: 3;
   font-size: 12px;
-  height: 100px;
+  height: 3.75rem;
 }
 
 #story-profile > span {
   font-size: 12px;
 }
 
-.story-container {
+.story-container{
   max-width: 424px;
-  gap: 24px;
+  gap:1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -657,6 +688,10 @@ input[value="submit"] {
 }
 
 @media only screen and (max-width: 1152px) {
+  #plant-container {
+    justify-content: center;
+  }
+
   input[value="submit"] {
     place-self: center;
   }
@@ -685,7 +720,7 @@ input[value="submit"] {
     justify-content: space-around;
   }
 
-  .social-profile > span {
+  .social-profile > span{
     font-size: 12px;
   }
 
@@ -769,12 +804,12 @@ input[value="submit"] {
     padding-top: 20px;
     padding-left: 0px;
   }
-  .garden-image-input {
+  .garden-image-input{
     width: 300px;
   }
 
-  .story-container {
-    gap: 5px;
+  .story-container{
+    gap:5px;
   }
 
   .main-wrapper {
@@ -808,11 +843,9 @@ input[value="submit"] {
     flex-shrink: 2;
   } */
 
-
   /* .plant-amount-editor {
     width: 160px; 
   } */
-
 
   .garden-image-edit > :nth-child(2) {
     width: 24px;
@@ -825,7 +858,7 @@ input[value="submit"] {
   /* .category-wrapper > h2 {
     align-self: flex-start;
     font-size: medium;
-  } */
+  } */ 
 }
 
 .login-container {
@@ -848,12 +881,12 @@ input[value="submit"] {
 
 .login-content h3 {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2rem; 
 }
 
 .login-content p {
   margin-top: 0.25rem;
-  font-size: 1rem;
+  font-size: 0.8rem; 
   line-height: 1.5rem;
 }
 
@@ -872,8 +905,9 @@ input[value="submit"] {
   flex-direction: column;
   padding: 1rem;
   justify-content: space-between;
-  height: 40%;
-  border-color: #f3f0f0;
+  gap: 1rem;
+  /* height: 40%; */
+  border-color: #F3F0F0;
 }
 
 #login-username {
@@ -914,14 +948,14 @@ input[value="submit"] {
 input[value="Log In"] {
   margin-top: 3%;
   border-radius: 0.375rem;
-  background-color: #45a1bd;
+  background-color: #45A1BD;
   width: 100%;
   height: 2rem;
   font-size: 1rem;
 }
 
 .login-img {
-  background-image: url("../assetts/login5.jpg");
+  background-image: url("../assetts/login5.png");
   background-size: cover;
   background-position: center;
   background-position: right top;
@@ -1007,7 +1041,7 @@ input[value="Log In"] {
   input[value="Log In"] {
     margin-top: 1rem;
     border-radius: 0.375rem;
-    background-color: #45a1bd;
+    background-color: #45A1BD;
     width: 100%;
     height: 3rem;
   }
@@ -1049,13 +1083,13 @@ input[value="Log In"] {
   .logo {
     place-self: center;
   }
-
+  
   .login-content p {
     place-self: center;
     font-size: 0.625rem;
     line-height: 1rem;
   }
-
+  
   .r-label-text {
     place-self: center;
     font-size: 0.75rem; /* 12px */
@@ -1079,6 +1113,7 @@ input[value="Log In"] {
   .r-form-wrapper {
     display: flex;
     width: 100%;
+    
   }
 
   .r-form-container {
