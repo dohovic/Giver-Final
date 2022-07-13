@@ -5,11 +5,7 @@ const jsonAddresses = fetch("data.json")
   .then((json) => {
     obj = json;
   });
-function loadGardens(e) {
-  let Gardens = document.getElementById("gardens");
-  console.log(e);
-  console.log(123);
-}
+
 function loadAddresses() {
   let Addresses = document.getElementById("addresses");
   console.log(obj.addresses);
@@ -29,7 +25,7 @@ function addPlant() {
   const section = document.createElement("section");
   section.setAttribute("class", "plant-item");
   section.innerHTML =
-    "<div class='garden-image-edit'><button class='upload-garden-photo'><img src='./includes/images/icons/add-photo-garden.png' alt='' /></button><button class='upload-garden-x'><img src='./includes/images/icons/circle-x.png' alt='' /></button></div><input type='text' min='0' placeholder='Add Plant Name' name='plant_name[]' required></input><input type='hidden' name='owner_id' value='<?php echo $_SESSION['user'] ?></input><div class=' plant-amount-editor'><button class='editor-button' type='button' onclick='decreasePlant(this)'>-</button><div class='plant-amount'><input type='number' required placeholder='0' name='amount[]'></input></div><button class='editor-button' type='button' onclick='increasePlant(this)'>+</button></div>";
+    "<div class='garden-image-edit'><button class='upload-garden-photo' type='button'><img src='./includes/images/icons/add-photo-garden.png' alt='' /></button><button class='upload-garden-x' type='button' onclick='removePlant(this)'><img src='./includes/images/icons/circle-x.png' alt='' /></button></div><input type='text' min='0' placeholder='Add Plant Name' name='plant_name[]' required></input><input type='hidden' name='owner_id' value='<?php echo $_SESSION['user'] ?></input><div class=' plant-amount-editor'><button class='editor-button' type='button' onclick='decreasePlant(this)'>-</button><div class='plant-amount'><input type='number' required placeholder='0' name='amount[]'></input></div><button class='editor-button' type='button' onclick='increasePlant(this)'>+</button></div>";
   plants.insertBefore(section, plants.lastChild);
 }
 function test(e) {
@@ -58,15 +54,28 @@ function addTask() {
   const div = document.createElement("div");
   const input = document.createElement("input");
   const img = document.createElement("img");
+  const button = document.createElement("button");
+  button.setAttribute("type", "button");
+  button.setAttribute("onclick", "removeTask(this)");
   div.setAttribute("class", "flex gap-2");
 
   img.setAttribute("src", "includes/images/icons/remove-plant-icon-22.jpeg");
+  button.appendChild(img);
 
   input.setAttribute("type", "text");
   input.setAttribute("name", "tasks[]");
   input.setAttribute("class", "task");
   input.setAttribute("placeholder", "Insert Task Name");
-  div.appendChild(img);
+  div.appendChild(button);
   div.appendChild(input);
   container.appendChild(div);
+}
+
+function removePlant(element) {
+  console.log("test remove child");
+  element.parentElement.parentElement.remove();
+}
+
+function removeTask(e) {
+  e.parentElement.remove();
 }

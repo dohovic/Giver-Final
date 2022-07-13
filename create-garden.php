@@ -3,20 +3,12 @@ include "config.php";
 include "db.php";
 
 session_start();
-echo $_SESSION["user"] . "startsession<br>";
 if (!empty($_SESSION["user"])) {
-    echo $_SESSION["user"] . "<br>";
     // Read the JSON file
     $json = file_get_contents('data.json');
     // Decode the JSON file
     $json_data = json_decode($json);
 
-    print_r($json_data->addresses[0]->id);
-    echo "<br>";
-    foreach ($json_data->addresses as $street) {
-        print_r($street->street . " " . $street->number);
-        echo "<br>";
-    }
     if (!empty($_POST)) {
         $_address = $_POST['address'];
         $_owner_id = $_SESSION["user"];
@@ -36,9 +28,6 @@ if (!empty($_SESSION["user"])) {
         if ($result) {
             $row = mysqli_fetch_assoc($result);
         } else die("DB query failed.");
-        echo "<br>";
-        echo $_gardenName . "<br>";
-        echo 'result: ' . $row['id'] . "<br>";
         $garden_id = $row['id'];
         $plant_name = $_POST["plant_name"];
         $amount = $_POST["amount"];
@@ -46,19 +35,18 @@ if (!empty($_SESSION["user"])) {
             $query1 = "INSERT INTO tbl_203_test_plat (`plant_name`, `garden_id`, `plant_img`, `amount`) VALUES ('$n', '$garden_id',
 'fsafasfafasdfadasdsa', '$amount[$key]');";
             if (mysqli_query($connection, $query1)) {
-                echo 'plant ' . $n . ' inserted successfully <br>';
             } else echo 'somthing went wrong';
-            echo "plant item: " . $n . " Amount: " . $amount[$key] . "<br>";
         }
     }
 } else {
-    header('Location: ' . 'http://localhost/mac/Giver/login.php');
+    header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
 }
 
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -68,7 +56,7 @@ if (!empty($_SESSION["user"])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <script src="./includes/script.js"></script>
     <script>
-        window.onload = () => loadAddresses;
+    window.onload = () => loadAddresses;
     </script>
     <title>Giver - CreateGarden</title>
 </head>
@@ -131,7 +119,8 @@ if (!empty($_SESSION["user"])) {
                         </div>
                         <div class="input-field" id="selection-field">
                             <label>Select Address
-                                <select type="text" placeholder="Enter Garden's Address" id="addresses" name="address" required>
+                                <select type="text" placeholder="Enter Garden's Address" id="addresses" name="address"
+                                    required>
                                 </select>
                             </label>
                         </div>
@@ -141,11 +130,11 @@ if (!empty($_SESSION["user"])) {
                     </div>
                     <div>
                         <a href=" #">
-                          <div class="garden-image-input">
-                            <div class="garden-cover-image">
-                              <img src="./includes/images/icons/add-image-garden-icon.png" alt="" />
+                            <div class="garden-image-input">
+                                <div class="garden-cover-image">
+                                    <img src="./includes/images/icons/add-image-garden-icon.png" alt="" />
+                                </div>
                             </div>
-                          </div>
                         </a>
                     </div>
                 </section>
