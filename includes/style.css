@@ -146,6 +146,10 @@ input::placeholder {
   font-size: 14px;
 }
 
+.upload-garden-x {
+  place-self: start;
+}
+
 .plant-item {
   display: flex;
   flex-direction: column;
@@ -419,12 +423,11 @@ select {
 }
 
 .garden-image-edit > :nth-child(2) {
-  width: 42px;
-  height: 42px;
+  max-width: 20vw;
   position: absolute;
   margin: 12px;
-  align-self: end;
   justify-self: end;
+  border-radius: 15px;
 }
 
 .garden-image-input .upload-garden-photo {

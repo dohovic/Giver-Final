@@ -79,7 +79,7 @@
           </div>
         </form>
       </nav>
-      <div class="edit-icons grid place-items-center">
+      <div class="edit-icons grid place-items-center place-self-start">
         <div>
           <button><img src="includes/images/icons/bell.png" alt="" /></button>
           <button class="hidden lg:inline">

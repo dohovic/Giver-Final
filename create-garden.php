@@ -153,10 +153,13 @@ if (!empty($_SESSION["user"])) {
                     <h1 class="text-2xl font-semibold mt-3">Grow For The Win</h1>
                     <div class="gardens-container" id="plant-container">
                         <!-- <section class="plant-item">
-                            <div class="garden-image-edit">
-                                <div class="upload-garden-photo">
-                                    <img src="./includes/images/icons/add-photo-garden.png" alt="" />
-                                </div>
+                            <div class='garden-image-edit'>
+                              <div class='upload-garden-photo'>
+                                  <img src='./includes/images/icons/add-photo-garden.png' alt='' />
+                              </div>
+                              <button class="upload-garden-x">
+                                  <img src="./includes/images/icons/circle-x.png" alt="" />
+                              </button>
                             </div>
                             <input type="text" placeholder="Add Plant Name" name="plant_name[]" required></input>
                             <input type="hidden" name="owner_id" value="<?php echo $_SESSION["user"] ?>"></input>
