@@ -4,13 +4,42 @@ include "db.php";
 
 session_start();
 if (!empty($_SESSION["user"])) {
-    $user_id = $_SESSION["user"];
-    $query = "SELECT * from tbl_203_test_gardens where owner_id = '$user_id'";
-    $result = mysqli_query($connection, $query);
-    // if ($result) {
+    $_user_id = $_SESSION["user"];
+    $query = "SELECT * from tbl_203_test_gardens where owner_id = '$_user_id'";
+    $result1 = mysqli_query($connection, $query);
 
-    // } else die("DB query failed.");
+    if (!empty($_POST)) {
+        $_garden_id = $_POST['garden_id'];
+        $_date = $_POST['date'];
+        $_event_name = $_POST['event_name'];
+        $_time = $_POST['time'];
+        if ($_POST['description']) {
+            $_description = $_POST['description'];
+        } else $_description = '';
+        $query = "INSERT INTO tbl_203_events_test (`event_name`,`garden_id`, `date`,`time`, `description`) VALUES
+('$_event_name','$_garden_id','$_date','$_time','$_description');";
+
+        if (mysqli_query($connection, $query)) {
+            echo 'inserted successfully';
+        } else echo 'somthing went wrong';
+
+        $_geteventId = "SELECT id from tbl_203_events_test ORDER BY id DESC limit 1";
+        $result = mysqli_query($connection, $_geteventId);
+        if ($result) {
+            $row = mysqli_fetch_assoc($result);
+        } else die("DB query failed.");
+        $_event_id = $row['id'];
+
+        foreach ($_POST["tasks"] as $key => $n) {
+            $query1 = "INSERT INTO tbl_tasks_test (`task_name`, `event_id`) VALUES ('$n', '$_event_id');";
+            if (mysqli_query($connection, $query1)) {
+            } else echo 'somthing went wrong';
+        }
+    }
+} else {
+    header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -78,18 +107,19 @@ if (!empty($_SESSION["user"])) {
     </header>
     <main>
         <div class="main-wrapper">
-            <form action="#" method="GET">
+            <form action="#" method="POST">
                 <section class="input-container">
                     <div class="inputs-form">
                         <div class="input-field" id="line-input">
-                            <input type="text" placeholder="Add Event Name" minlength="3" required />
+                            <input type="text" placeholder="Add Event Name" minlength="2" name="event_name" required />
                         </div>
                         <div class="input-field" id="selection-field">
                             <label for="gardens">Pick a Garden</label>
-                            <select name="Garden" required id="gardens">
-                                <?php while ($row  = mysqli_fetch_assoc($result))
-                                    echo "<option>" . $row['garden_name'] . "</option>";
+                            <select name="garden_id" required id="gardens">
+                                <?php while ($row  = mysqli_fetch_assoc($result1))
+                                    echo "<option value=" . $row['id'] . ">" . $row['garden_name'] . "</option>";
                                 // echo print_r($row);  
+
                                 ?>
                             </select>
                             <!-- <input type="text" placeholder="Choose a Garden" /> -->
@@ -105,7 +135,7 @@ if (!empty($_SESSION["user"])) {
                             </div>
                         </div>
                         <div class="input-field" id="text-input">
-                            <textarea type="text" placeholder="Add Event Description"></textarea>
+                            <textarea type="text" placeholder="Add Event Description" name="description"></textarea>
                         </div>
                     </div>
                     <div>
@@ -135,9 +165,7 @@ if (!empty($_SESSION["user"])) {
             </form>
         </div>
     </main>
-    <script>
-        window.onload = () => loadGardens(<?php return $row ?>);
-    </script>
+
 </body>
 
 </html>
