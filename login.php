@@ -13,7 +13,7 @@ if (!empty($_POST["loginMail"])) {
         session_start();
         $_SESSION["user"] = $row['id'];
         echo $_SESSION["user"];
-        header('Location: ' . 'http://localhost/mac/Giver/');
+        header('Location: ' . './index.php');
     } else {
         $message = "Failed to log in. Bad email or password.";
     }
@@ -29,11 +29,11 @@ if (!empty($_POST["loginMail"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link
+    <link
         href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
         rel="stylesheet"
-      /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+      />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="includes/style.css?v=<?php echo time(); ?>" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <title>Login</title>
@@ -46,7 +46,7 @@ if (!empty($_POST["loginMail"])) {
                 <div class="login-container">
                     <div class="login-content">
                         <div class="logo">
-                            <a href="#" id="logo"></a>
+                            <a href="#" id="login-logo"></a>
                         </div>
                         <!-- <h3>Log in to Giver</h3> -->
                         <p>Come smell the flowers</p>

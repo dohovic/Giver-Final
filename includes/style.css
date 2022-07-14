@@ -22,7 +22,7 @@ body {
   font-family: "Quicksand";
 }
 
-#logo, #garden-logo {
+#logo, #garden-logo, #login-logo {
   background-image: url("../includes/images/icons/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -35,6 +35,11 @@ body {
 
 #garden-logo {
   display: flex;
+}
+
+#login-logo {
+  width: 79px;
+  height: 24px;
 }
 
 /* header, nav, footer {
@@ -1112,7 +1117,7 @@ input[value="Log In"] {
 }
 
 .login-img {
-  background-image: url("../assetts/login5.png");
+  background-image: url("./images/items/login.jpg");
   background-size: cover;
   background-position: center;
   background-position: right top;
@@ -1217,6 +1222,10 @@ input[value="Log In"] {
     width: 69px;
     height: 24px;
     place-self: center;
+  }
+
+  #login-logo {
+
   }
 
   .user-icons {

@@ -48,11 +48,11 @@ if (!empty($_SESSION["user"])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- <link
+    <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
-    /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />

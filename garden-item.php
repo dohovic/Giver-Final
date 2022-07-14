@@ -37,7 +37,11 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <script src="includes/script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -92,7 +96,7 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
                 <button class="w-7 mx-1"><img src="includes/images/icons/icon-star.png" alt="" /></button>
                 <button class="w-7 mx-1"><img src="includes/images/icons/icon-event.png" alt="" /></button>
                 <a class="w-7 mx-1 mr-5"
-                    href="http://localhost/mac/giver/create-garden.php?garden_id=<?php echo $row['id'] ?>"><img
+                    href="/create-garden.php?garden_id=<?php echo $row['id'] ?>"><img
                         src="includes/images/icons/icon-edit.png" alt="" /></a>
                 <!-- </div> -->
                 <button>

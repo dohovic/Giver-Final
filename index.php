@@ -4,7 +4,7 @@ include "db.php";
 
 session_start();
 if (empty($_SESSION["user"])) {
-    header('Location: ' . 'http://localhost/mac/giver/index.php');
+    header('Location: ' . '/login.php');
 } else {
     $query = "SELECT * from tbl_203_test_gardens order by id DESC";
     $result = mysqli_query($connection, $query);
@@ -21,7 +21,11 @@ if (empty($_SESSION["user"])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -91,7 +95,7 @@ if (empty($_SESSION["user"])) {
 
                             if ($row = mysqli_fetch_assoc($result)) {
 
-                                echo "<a href='http://localhost/mac/giver/garden-item.php?garden_id=" . $row['id'] . "'>";
+                                echo "<a href='/garden-item.php?garden_id=" . $row['id'] . "'>";
                                 echo "<section class='garden-item'>";
                                 echo  "<div class='garden-image'>";
                                 echo "<img src='./includes/images/gardens/lemon_garden.png' alt='' />";
@@ -114,7 +118,7 @@ if (empty($_SESSION["user"])) {
                         while ($i < 4) {
 
                             if ($row = mysqli_fetch_assoc($result)) {
-                                echo "<a href='http://localhost/mac/giver/garden-item.php?garden_id=" . $row['id'] . "'>";
+                                echo "<a href='/garden-item.php?garden_id=" . $row['id'] . "'>";
                                 echo "<section class='garden-item'>";
                                 echo  "<div class='garden-image'>";
                                 echo "<img src='./includes/images/gardens/lemon_garden.png' alt='' />";
@@ -139,7 +143,7 @@ if (empty($_SESSION["user"])) {
                         while ($i < 4) {
 
                             if ($row = mysqli_fetch_assoc($result)) {
-                                echo "<a href='http://localhost/mac/giver/garden-item.php?garden_id=" . $row['id'] . "'>";
+                                echo "<a href='/garden-item.php?garden_id=" . $row['id'] . "'>";
                                 echo "<section class='garden-item'>";
                                 echo  "<div class='garden-image'>";
                                 echo "<img src='./includes/images/gardens/lemon_garden.png' alt='' />";
