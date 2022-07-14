@@ -47,61 +47,83 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
 </head>
 
 <body class="p-4">
-  <header class="grid justify-items-center" id="layout1-header">
-    <div class="lg:hidden">
-      <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
-    </div>
-    <div class="logo">
-      <a href="index.php" id="logo"></a>
-    </div>
-    <nav class="self-center justify-self-center justify-items-center hidden lg:block">
-      <ul class="flex col-4 gap-6">
-        <li>
-          <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
-            <img src="includes/images/icons/icon-leaves.png" alt="" class="nav-icon" />
-            <div>My Gardens</div>
-          </a>
-        </li>
-        <li>
-          <a href="./create-garden.php" class="grid gap-3 p-2 w-40 h-12 items-center">
-            <img src="includes/images/icons/icon-leavesNew.png" alt="" class="nav-icon" />
-            <div>New Garden</div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
-            <img src="includes/images/icons/icon-event.png" alt="" class="nav-icon" />
-            <div>My Events</div>
-          </a>
-        </li>
-        <li>
-          <a href="./create-event.php" class="grid gap-3 p-2 w-40 h-12 items-center">
-            <img src="includes/images/icons/icon-eventNew.png" alt="" class="nav-icon" />
-            <div>New Event</div>
-          </a>
-        </li>
-      </ul>
-      <form action="#" method="GET" class="mt-8">
-        <div class="search-bar">
-          <button id="search-icon" type="submit"></button>
-          <input type="text" placeholder="Search" class="search" />
+    <header class="grid justify-items-center" id="layout1-header">
+      <div class="lg:hidden" id="hamburger">
+        <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
+      </div>
+      <div class="logo">
+        <a href="index.php" id="logo"></a>
+      </div>
+      <nav
+        class="self-center justify-self-center justify-items-center hidden lg:block" >
+        <ul class="flex col-4 gap-6 mx-1">
+          <li>
+            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+              <img
+                src="includes/images/icons/icon-leaves.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>My Gardens</div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./create-garden.php"
+              class="grid gap-3 p-2 w-40 h-12 items-center"
+            >
+              <img
+                src="includes/images/icons/icon-leavesNew.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>New Garden</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+              <img
+                src="includes/images/icons/icon-event.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>My Events</div>
+            </a>
+          </li>
+          <li>
+            <a href="./create-event.php" class="grid gap-3 p-2 w-40 h-12 items-center">
+              <img
+                src="includes/images/icons/icon-eventNew.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>New Event</div>
+            </a>
+          </li>
+        </ul>
+        <form action="#" method="GET" class="mt-8">
+          <div class="search-bar">
+            <button id="search-icon" type="submit"></button>
+            <input type="text" placeholder="Search" class="search" />
+          </div>
+        </form>
+      </nav>
+      <div class="top-icons">
+        <div class="user-icons">
+            <!-- <div class="edit-icons"> -->
+                <button class="w-7 mx-1"><img src="includes/images/icons/icon-star.png" alt="" /></button>
+                <button class="w-7 mx-1"><img src="includes/images/icons/icon-event.png" alt="" /></button>
+                <button class="w-7 mx-1 mr-5"><img src="includes/images/icons/icon-edit.png" alt="" /></button>
+            <!-- </div> -->
+            <button>
+                <img src="includes/images/icons/bell.png" alt="" />
+            </button>
+          <button class="hidden lg:inline">
+            <img src="includes/images/icons/user-profile.png" alt="" />
+          </button>
         </div>
-      </form>
-    </nav>
-    <div class="edit-icons flex place-items-center place-self-start">
-      <div class="flex mr-10">
-        <button class="w-7 mx-1"><img src="includes/images/icons/icon-star.png" alt="" /></button>
-        <button class="w-7 mx-1"><img src="includes/images/icons/icon-event.png" alt="" /></button>
-        <button class="w-7 mx-1"><img src="includes/images/icons/icon-edit.png" alt="" /></button>
-      </div>
-      <div>
-        <button><img src="includes/images/icons/bell.png" alt="" /></button>
-        <button class="hidden lg:inline">
-          <img src="includes/images/icons/user-profile.png" alt="" />
-        </button>
-      </div>
-    </div>
-  </header>
+      
+    </header>
   <main class="mt-10">
     <div class="main-wrapper">
       <div class="input-field" id="hidden-input">
