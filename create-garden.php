@@ -83,7 +83,11 @@ if (!empty($_GET['garden_id'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -95,8 +99,8 @@ if (!empty($_GET['garden_id'])) {
 </head>
 
 <body class="p-4">
-    <header class="grid justify-items-center mb-5" id="layout1-header">
-        <div class="lg:hidden">
+    <header class="flex justify-between mb-5" id="layout1-header">
+        <div class="lg:hidden" id="hamburger">
             <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
         </div>
         <div class="logo">
@@ -159,7 +163,7 @@ if (!empty($_GET['garden_id'])) {
                                 </select>
                             </label>
                         </div>
-                        <div class="input-field" id="text-input">
+                        <div class="input-field mb-0" id="text-input">
                             <textarea type="text" placeholder="<?php echo $_description ?>"
                                 name="description"></textarea>
                         </div>

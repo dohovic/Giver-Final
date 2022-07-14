@@ -48,11 +48,11 @@ if (!empty($_SESSION["user"])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- <link
+    <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
-    /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -61,14 +61,14 @@ if (!empty($_SESSION["user"])) {
 </head>
 
 <body class="p-4">
-    <header class="grid justify-items-center" id="layout1-header">
-        <div class="lg:hidden">
+    <header class="flex justify-between mb-5" id="layout1-header">
+        <div class="lg:hidden" id="hamburger">
             <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
         </div>
         <div class="logo">
             <a href="index.php" id="logo"></a>
         </div>
-        <nav class="self-center justify-self-center justify-items-center hidden lg:block">
+        <nav class="self-center justify-self-center justify-items-center hidden lg:block" id="create-page-nav">
             <ul class="flex col-4 gap-6">
                 <li>
                     <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
@@ -97,7 +97,7 @@ if (!empty($_SESSION["user"])) {
             </ul>
         </nav>
         <div class="edit-icons grid place-items-center">
-            <div>
+            <div class="user-icons">
                 <button><img src="includes/images/icons/bell.png" alt="" /></button>
                 <button class="hidden lg:inline">
                     <img src="includes/images/icons/user-profile.png" alt="" />
