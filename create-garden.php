@@ -4,20 +4,18 @@ include "db.php";
 
 session_start();
 if (!empty($_SESSION["user"])) {
-    // Read the JSON file
-    $json = file_get_contents('data.json');
-    // Decode the JSON file
-    $json_data = json_decode($json);
 
     if (!empty($_POST)) {
         $_address = $_POST['address'];
+        $_address_id = $_address[0];
+        $_address_string = substr($_address, 2);
         $_owner_id = $_SESSION["user"];
         $_gardenName = $_POST['gardenName'];
         if ($_POST['description']) {
             $_description = $_POST['description'];
         } else $_description = '';
-        $query = "INSERT INTO tbl_203_test_gardens (`address`, `owner_id`, `garden_name`, `description`) VALUES
-('$_address','$_owner_id', '$_gardenName','$_description');";
+        $query = "INSERT INTO tbl_203_test_gardens (`address`, `owner_id`, `garden_name`, `description`, `address_string`) VALUES
+        ('$_address_id','$_owner_id', '$_gardenName','$_description', '$_address_string');";
 
         if (mysqli_query($connection, $query)) {
             echo 'inserted successfully';
@@ -34,7 +32,7 @@ if (!empty($_SESSION["user"])) {
         if (!empty($_POST["plant_name"])) {
             foreach ($_POST["plant_name"] as $key => $n) {
                 $query1 = "INSERT INTO tbl_203_test_plat (`plant_name`, `garden_id`, `plant_img`, `amount`) VALUES ('$n', '$garden_id',
-'fsafasfafasdfadasdsa', '$amount[$key]');";
+        'fsafasfafasdfadasdsa', '$amount[$key]');";
                 if (mysqli_query($connection, $query1)) {
                 } else echo 'somthing went wrong';
             }
@@ -59,7 +57,7 @@ if (!empty($_SESSION["user"])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <script src="./includes/script.js"></script>
     <script>
-        window.onload = () => loadAddresses;
+    window.onload = () => loadAddresses;
     </script>
     <title>Giver - CreateGarden</title>
 </head>
@@ -122,7 +120,8 @@ if (!empty($_SESSION["user"])) {
                         </div>
                         <div class="input-field" id="selection-field">
                             <label>Select Address
-                                <select type="text" placeholder="Enter Garden's Address" id="addresses" name="address" required>
+                                <select type="text" placeholder="Enter Garden's Address" id="addresses" name="address"
+                                    required>
                                 </select>
                             </label>
                         </div>
@@ -182,7 +181,7 @@ if (!empty($_SESSION["user"])) {
         </div>
     </main>
     <script>
-        window.onload = () => loadAddresses();
+    window.onload = () => loadAddresses();
     </script>
 </body>
 
