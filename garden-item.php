@@ -50,7 +50,7 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
             <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
         </div>
         <div class="logo">
-            <a href="index.php" id="logo"></a>
+            <a href="index.php" id="logo-abs"></a>
         </div>
         <nav class="self-center justify-self-center justify-items-center hidden lg:block">
             <ul class="flex col-4 gap-6 mx-1">
@@ -108,10 +108,10 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
         <div class="main-wrapper">
 
             <section class="input-container">
+                <div class="input-field" id="disappear-input">
+                    <span class="garden-detail" id="garden-name"><?php echo $_garden_name ?></span>
+                </div>
                 <div class="inputs-form">
-                    <div class="input-field" id="disappear-input">
-                        <span class="garden-detail" id="garden-name"><?php echo $_garden_name ?></span>
-                    </div>
                     <div class="input-field">
                         <span class="garden-detail" id="garden-address"></span>
                     </div>
