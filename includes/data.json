@@ -91,62 +91,63 @@
                 {
                     "id" : "1",
                     "name" : "Eyal",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/eyal-profile.png",
+                    "story_img" : "./includes/images/storie"
                 },
                 {
                     "id" : "2",
                     "name" : "Aliza",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/aliza-profile.png",
+                    "story_img" : "./includes/images/stories/aliza-story.png"
                 },
                 {
                     "id" : "3",
                     "name" : "Lihi",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/lihi-profile.png",
+                    "story_img" : "./includes/images/stories/lihi-story.png"
                 },
                 {
                     "id" : "4",
                     "name" : "Roni",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/roni-profile.png",
+                    "story_img" : "./includes/images/stories/roni-story.png"
                 },
                 {
                     "id" : "5",
                     "name" : "Or",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/or-profile.png",
+                    "story_img" : "./includes/images/stories/or-story.png"
                 },
                 {
                     "id" : "6",
                     "name" : "Sami",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/sami-profile.png",
+                    "story_img" : "./includes/images/stories/sami-story.png"
                 },
                 {
                     "id" : "7",
                     "name" : "David",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/david-profile.png",
+                    "story_img" : "./includes/images/stories/david-story.png"
                 },
                 {
                     "id" : "8",
                     "name" : "Yitzhak",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/yitzhak-profile.png",
+                    "story_img" : "./includes/images/stories/yitzhak-story.png"
                 },
                 {
                     "id" : "9",
                     "name" : "Alma",
-                    "prfile_img" : "",
-                    "story_img" : ""
+                    "prfile_img" : "./includes/images/stories/alma-profile.png",
+                    "story_img" : "./includes/images/stories/alma-story.png"
                 }
             ],
             "comments": [
                 {
                     "id" : "1",
                     "name" : "David",
+                    "img" : "./includes/images/profiles/david.png",
                     "comment" : "I made lemonade yesterday from the garden on the old basketball court. Great Stu... ",
                     "likes" : "9",
                     "replies" : "14",
@@ -161,6 +162,7 @@
                 {
                     "id" : "2",
                     "name" : "Nof",
+                    "img" : "./includes/images/profiles/nof.png",
                     "comment" : "I can’t believe I have freshly pickeed lemons!",
                     "likes" : "6",
                     "replies" : "9",
@@ -175,6 +177,7 @@
                 {
                     "id" : "3",
                     "name" : "Yaron",
+                    "img" : "./includes/images/profiles/yaron.png",
                     "comment" : "The cherry tomatoes planting day was great. I can’t wait for the next one.",
                     "likes" : "16",
                     "replies" : "12",
