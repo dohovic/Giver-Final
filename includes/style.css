@@ -271,7 +271,24 @@ select {
   flex-direction: row;
 }
 
+.top-icons {
+  display: flex;
+  place-items: center;
+  place-self: start;
+  place-content: flex-end;
+  /* vertical-align: middle; */
+  padding-top: 0.45rem;
+}
+
 .edit-icons {
+  display: flex;
+}
+
+.user-icons {
+  display: flex;
+  place-items: center;
+  place-self: start;
+
   vertical-align: middle;
 }
 
@@ -696,6 +713,18 @@ input[value="submit"] {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  #logo {
+    position: absolute;
+  }
+
+  .top-icons {
+    place-self: center;
+    padding-top: 0px;
+  }
+}
+
+
 @media only screen and (max-width: 1000px) {
   nav {
     display: hidden;
@@ -853,6 +882,10 @@ input[value="submit"] {
 }
 
 @media only screen and (max-width: 768px) {
+  .user-icons {
+    width: 80%;
+  }
+
   .inputs-form {
     width: 70%;
   }
@@ -1080,7 +1113,39 @@ input[value="Log In"] {
   }
 }
 
+@media (max-width: 320px) {
+  .user-icons {
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 599px) {
+  #hamburger {
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    align-self: center;
+  }
+
+  .logo {
+    display: flex;
+    padding-left: 3rem;
+    /* height: 100%; */
+  }
+
+  #logo {
+    width: 69px;
+    height: 24px;
+    place-self: center;
+  }
+  
+  .user-icons {
+    width: 60%;
+    place-self: center;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+  }
+
   .garden-detail {
     font-size: 12px;
   }
