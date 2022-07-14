@@ -37,10 +37,10 @@ if (!empty($_SESSION["user"])) {
                 } else echo 'somthing went wrong';
             }
         }
-        header('Location: ' . 'http://localhost/Giver/Giver-Final/garden-item.php?garden_id=' . $garden_id . '');
+        header('Location: ' . 'http://localhost/mac/giver/garden-item.php?garden_id=' . $garden_id . '');
     }
 } else {
-    header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
+    header('Location: ' . 'http://localhost/mac/giver/login.php');
 }
 
 ?>
