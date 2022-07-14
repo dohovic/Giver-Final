@@ -437,6 +437,10 @@ select {
   background-repeat: repeat; */
 }
 
+#upload-garden-img{
+  max-width: 33%;
+}
+
 .garden-image-edit {
   display: grid;
   width: 100%;
@@ -737,6 +741,14 @@ input[value="submit"] {
     justify-content: center;
   }
 
+  #unres-inputs {
+    max-width: 90%;
+  }
+
+  #upload-garden-img {
+    max-width: 90%;
+  }
+
   input[value="submit"] {
     place-self: center;
   }
@@ -814,6 +826,11 @@ input[value="submit"] {
 @media (max-width: 990px) {
   .inputs-form {
     width: 60%;
+    position: absolute;
+  }
+
+  #unres-inputs {
+    position: relative;
   }
 
   .input-field {
@@ -830,10 +847,6 @@ input[value="submit"] {
 
   .garden-image-input{
     width: 100%;
-  }
-
-  .inputs-form {
-    position: absolute;
   }
 
   .story-container{
@@ -884,6 +897,10 @@ input[value="submit"] {
 
 
 @media only screen and (max-width: 768px) {
+  #upload-garden-img {
+    max-width: 96%;
+  }
+
   .user-icons {
     width: 80%;
   }
@@ -1104,6 +1121,10 @@ input[value="Log In"] {
     gap: 12px;
   }
 
+  #unreversal-input {
+    flex-direction: column;
+  }
+
   .input-field {
     margin-top: 0px; 
     margin-bottom: 8px;
@@ -1122,6 +1143,14 @@ input[value="Log In"] {
 }
 
 @media (max-width: 599px) {
+  #selection-field {
+    place-content: center;
+  }
+
+  #selection-field > label {
+    text-align: center;
+  }
+
   #hamburger {
     display: inline-flex;
     width: 22px;
@@ -1212,6 +1241,10 @@ input[value="Log In"] {
 }
 
 @media (max-width: 440px) {
+  #upload-garden-img {
+    max-width: 100%;
+  }
+
   .garden-item {
     min-width: 90vw;
   }
