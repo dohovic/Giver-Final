@@ -12,8 +12,9 @@ function loadAddresses() {
   let Addresses = document.getElementById("addresses");
   obj.addresses.map((data) => {
     let select = document.createElement("option");
-    select.setAttribute("value", data.id);
-    select.innerHTML = data.street + ", " + data.number;
+    const addressString = data.street + ", " + data.number;
+    select.setAttribute("value", data.id + "," + addressString);
+    select.innerHTML = addressString;
     Addresses.appendChild(select);
   });
 }
