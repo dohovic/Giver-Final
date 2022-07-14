@@ -63,7 +63,7 @@ if (!empty($_SESSION["user"])) {
 </head>
 
 <body class="p-4">
-    <header class="grid justify-items-center" id="layout1-header">
+    <header class="grid justify-items-center mb-5" id="layout1-header">
         <div class="lg:hidden">
             <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
         </div>
@@ -98,23 +98,25 @@ if (!empty($_SESSION["user"])) {
                 </li>
             </ul>
         </nav>
-        <div class="edit-icons grid place-items-center">
-            <div>
-                <button><img src="includes/images/icons/bell.png" alt="" /></button>
-                <button class="hidden lg:inline">
-                    <img src="includes/images/icons/user-profile.png" alt="" />
-                </button>
-                <a class="" href="logout.php">
-                    logout
-                </a>
-            </div>
+        <div class="top-icons">
+            <div class="user-icons">
+            <!-- <div class="edit-icons"> -->
+                <button class="w-7 mx-1"><img src="includes/images/icons/icon-trash.png" alt="" /></button>
+            <!-- </div> -->
+            <button>
+                <img src="includes/images/icons/bell.png" alt="" />
+            </button>
+          <button class="hidden lg:inline">
+            <img src="includes/images/icons/user-profile.png" alt="" />
+          </button>
+        </div>
         </div>
     </header>
     <main>
         <div class="main-wrapper">
             <form action="#" method="POST">
-                <section class="input-container">
-                    <div class="inputs-form">
+                <section class="input-container" id="unreversal-input">
+                    <div class="inputs-form" id="unres-inputs">
                         <div class="input-field" id="line-input">
                             <input type="text" placeholder="Add Garden Name" minlength="3" name="gardenName" required />
                         </div>
@@ -129,15 +131,15 @@ if (!empty($_SESSION["user"])) {
                             <textarea type="text" placeholder="Add Garden's Description" name="description"></textarea>
                         </div>
                     </div>
-                    <div>
-                        <a href=" #">
-                            <div class="garden-image-input">
-                                <div class="garden-cover-image">
-                                    <img src="./includes/images/icons/add-image-garden-icon.png" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <!-- <div> -->
+                        <!-- <a href=" #"> -->
+                            <button class="garden-image-input" id="upload-garden-img">
+                                <!-- <div class="garden-cover-image"> -->
+                                    <img src="./includes/images/items/add-garden-photo.png" alt="" />
+                                <!-- </div> -->
+                            </button>
+                        <!-- </a> -->
+                    <!-- </div> -->
                 </section>
                 <section class="category-wrapper gap-4" id="plants-category">
                     <h1 class="text-2xl font-semibold mt-3">Grow For The Win</h1>
