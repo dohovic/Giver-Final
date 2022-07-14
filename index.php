@@ -4,7 +4,7 @@ include "db.php";
 
 session_start();
 if (empty($_SESSION["user"])) {
-    header('Location: ' . '/login.php');
+    header('Location: ' . 'http://se.shenkar.ac.il/students/2021-2022/web1/dev_203/login.php');
 } else {
     $query = "SELECT * from tbl_203_test_gardens order by id DESC";
     $result = mysqli_query($connection, $query);

@@ -19,12 +19,12 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
     $_description = $row['description'];
   } else die("DB query failed.");
 
-  $query2 = "SELECT * FROM tbl_203_test_plat where garden_id = '$_garden_id';";
-  $result2 = mysqli_query($connection, $query2);
-  if ($result2) {
-  }
-} else {
-  die("DB query failed.");
+//   $query2 = "SELECT * FROM tbl_203_test_plat where garden_id = '$_garden_id';";
+//   $result2 = mysqli_query($connection, $query2);
+//   if ($result2) {
+//   }
+// } else {
+//   die("DB query failed.");
 }
 
 

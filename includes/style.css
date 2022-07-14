@@ -517,7 +517,7 @@ select {
 
 .plant-amount {
   display: flex;
-  width: 286px;
+  width: 70%;
   max-height: 64px;
   justify-content: center;
   align-items: center;
@@ -1209,23 +1209,12 @@ input[value="Log In"] {
 
   .logo {
     display: flex;
-    /* padding-left: 3rem; */
-    /* height: 100%; */
   }
-
-  /* #logo {
-    width: 69px;
-    height: 24px;
-  } */
 
   #garden-logo {
     width: 69px;
     height: 24px;
     place-self: center;
-  }
-
-  #login-logo {
-
   }
 
   .user-icons {

@@ -13,7 +13,7 @@ if (!empty($_POST["loginMail"])) {
         session_start();
         $_SESSION["user"] = $row['id'];
         echo $_SESSION["user"];
-        header('Location: ' . './index.php');
+        header('Location:   index.php');
     } else {
         $message = "Failed to log in. Bad email or password.";
     }
