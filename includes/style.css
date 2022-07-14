@@ -273,7 +273,23 @@ select {
   flex-direction: row;
 }
 
-.edit-icons{
+.top-icons {
+  display: flex;
+  place-items: center;
+  place-self: start;
+  place-content: flex-end;
+  /* vertical-align: middle; */
+  padding-top: 0.45rem;
+}
+
+.edit-icons {
+  display: flex;
+}
+
+.user-icons {
+  display: flex;
+  place-items: center;
+  place-self: start;
   vertical-align: middle;
 }
 
@@ -698,6 +714,17 @@ input[value="submit"] {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  #logo {
+    position: absolute;
+  }
+
+  .top-icons {
+    place-self: center;
+  }
+}
+
+
 @media only screen and (max-width: 1000px) {
   nav {
     display: hidden;
@@ -856,6 +883,10 @@ input[value="submit"] {
 
 
 @media only screen and (max-width: 768px) {
+  .user-icons {
+    width: 80%;
+  }
+
   .inputs-form {
     width: 70%;
   }
@@ -1084,6 +1115,14 @@ input[value="Log In"] {
 }
 
 @media (max-width: 599px) {
+  #logo {
+    
+  }
+
+  .user-icons {
+    width: 60%;
+  }
+
   .garden-detail {
     font-size: 12px;
   }

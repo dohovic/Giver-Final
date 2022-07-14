@@ -79,13 +79,13 @@
           </div>
         </form>
       </nav>
-      <div class="edit-icons flex place-items-center place-self-start">
-        <div class="flex mr-10">
-          <button class="w-7 mx-1"><img src="includes/images/icons/icon-star.png" alt="" /></button>
-          <button class="w-7 mx-1"><img src="includes/images/icons/icon-event.png" alt="" /></button>
-          <button class="w-7 mx-1"><img src="includes/images/icons/icon-edit.png" alt="" /></button>
-        </div>
-        <div>
+      <div class="top-icons">
+        <div class="user-icons">
+          <!-- <div class="edit-icons"> -->
+            <button class="w-7 mx-1"><img src="includes/images/icons/icon-star.png" alt="" /></button>
+            <button class="w-7 mx-1"><img src="includes/images/icons/icon-event.png" alt="" /></button>
+            <button class="w-7 mx-1"><img src="includes/images/icons/icon-edit.png" alt="" /></button>
+          <!-- </div> -->
           <button><img src="includes/images/icons/bell.png" alt="" /></button>
           <button class="hidden lg:inline">
             <img src="includes/images/icons/user-profile.png" alt="" />
