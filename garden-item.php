@@ -18,7 +18,7 @@
   </head>
   <body class="p-4">
     <header class="grid justify-items-center" id="layout1-header">
-      <div class="lg:hidden">
+      <div class="lg:hidden" id="hamburger">
         <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
       </div>
       <div class="logo">
