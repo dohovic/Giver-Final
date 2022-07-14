@@ -31,12 +31,15 @@ if (!empty($_SESSION["user"])) {
         $garden_id = $row['id'];
         $plant_name = $_POST["plant_name"];
         $amount = $_POST["amount"];
-        foreach ($_POST["plant_name"] as $key => $n) {
-            $query1 = "INSERT INTO tbl_203_test_plat (`plant_name`, `garden_id`, `plant_img`, `amount`) VALUES ('$n', '$garden_id',
+        if (!empty($_POST["plant_name"])) {
+            foreach ($_POST["plant_name"] as $key => $n) {
+                $query1 = "INSERT INTO tbl_203_test_plat (`plant_name`, `garden_id`, `plant_img`, `amount`) VALUES ('$n', '$garden_id',
 'fsafasfafasdfadasdsa', '$amount[$key]');";
-            if (mysqli_query($connection, $query1)) {
-            } else echo 'somthing went wrong';
+                if (mysqli_query($connection, $query1)) {
+                } else echo 'somthing went wrong';
+            }
         }
+        header('Location: ' . 'http://localhost/Giver/Giver-Final/garden-item.php?garden_id=' . $garden_id . '');
     }
 } else {
     header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
@@ -56,7 +59,7 @@ if (!empty($_SESSION["user"])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <script src="./includes/script.js"></script>
     <script>
-    window.onload = () => loadAddresses;
+        window.onload = () => loadAddresses;
     </script>
     <title>Giver - CreateGarden</title>
 </head>
@@ -119,8 +122,7 @@ if (!empty($_SESSION["user"])) {
                         </div>
                         <div class="input-field" id="selection-field">
                             <label>Select Address
-                                <select type="text" placeholder="Enter Garden's Address" id="addresses" name="address"
-                                    required>
+                                <select type="text" placeholder="Enter Garden's Address" id="addresses" name="address" required>
                                 </select>
                             </label>
                         </div>
@@ -180,7 +182,7 @@ if (!empty($_SESSION["user"])) {
         </div>
     </main>
     <script>
-    window.onload = () => loadAddresses();
+        window.onload = () => loadAddresses();
     </script>
 </body>
 
