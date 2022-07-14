@@ -3,7 +3,6 @@ include "config.php";
 include "db.php";
 
 session_start();
-echo $_SESSION["user"];
 if (empty($_SESSION["user"])) {
     header('Location: ' . 'http://localhost/Giver/Giver-Final/index.php');
 } else {
