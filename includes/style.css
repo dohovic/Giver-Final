@@ -106,7 +106,6 @@ input::placeholder {
   border-bottom: 1px black solid;
 }
 
-
 .category-wrapper {
   display: flex;
   flex-direction: column;
@@ -114,7 +113,6 @@ input::placeholder {
   margin-bottom: 1rem;
   width: 100%;
 }
-
 
 .gardens-container {
   display: flex;
@@ -399,7 +397,7 @@ select {
   justify-content: space-between;
 }
 
-.inputs-form{
+.inputs-form {
   min-width: 300px;
   width: 63%;
 }
@@ -437,7 +435,7 @@ select {
   background-repeat: repeat; */
 }
 
-#upload-garden-img{
+#upload-garden-img {
   max-width: 33%;
 }
 
@@ -520,12 +518,12 @@ select {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-input[type=number] {
-    -moz-appearance:textfield; 
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 #plant-container {
@@ -562,15 +560,6 @@ input[type=number] {
   align-items: center;
 }
 
-/* .submit-button {
-  width: 144px;
-  height: 48px;
-  margin-top: 16px;
-
-  border-radius: 15px;
-  background-color: #f3f0f0;
-} */
-
 #create-garden-wrapper {
   display: flex;
   flex-direction: column;
@@ -580,7 +569,7 @@ input[value="submit"] {
   width: 144px;
   height: 48px;
   margin-top: 16px;
-  
+  cursor: pointer;
   border-radius: 15px;
   background-color: #f3f0f0;
 }
@@ -678,7 +667,7 @@ input[value="submit"] {
   font-size: 12px;
 }
 
-.story-container{
+.story-container {
   /* max-width: 424px; */
   width: 30%;
   height: 100%;
@@ -728,7 +717,6 @@ input[value="submit"] {
     padding-top: 0px;
   }
 }
-
 
 @media only screen and (max-width: 1000px) {
   nav {
@@ -797,7 +785,7 @@ input[value="submit"] {
     justify-content: space-around;
   }
 
-  .social-profile > span{
+  .social-profile > span {
     font-size: 12px;
   }
 
@@ -865,11 +853,11 @@ input[value="submit"] {
     text-align: center;
   }
 
-  .garden-image-input{
+  .garden-image-input {
     width: 100%;
   }
 
-  .story-container{
+  .story-container {
     width: 100%;
     justify-content: space-evenly;
   }
@@ -915,7 +903,6 @@ input[value="submit"] {
   }
 }
 
-
 @media only screen and (max-width: 768px) {
   #unres-inputs {
     width: 100%;
@@ -954,10 +941,10 @@ input[value="submit"] {
     padding-left: 0px;
   }
 
-  .garden-image-input{
+  .garden-image-input {
     width: 100%;
   }
-  
+
   .inputs-form {
     position: absolute;
   }
@@ -1008,7 +995,7 @@ input[value="submit"] {
   /* .category-wrapper > h2 {
     align-self: flex-start;
     font-size: medium;
-  } */ 
+  } */
 }
 
 .login-container {
@@ -1031,12 +1018,12 @@ input[value="submit"] {
 
 .login-content h3 {
   font-size: 1.5rem;
-  line-height: 2rem; 
+  line-height: 2rem;
 }
 
 .login-content p {
   margin-top: 0.25rem;
-  font-size: 0.8rem; 
+  font-size: 0.8rem;
   line-height: 1.5rem;
 }
 
@@ -1057,7 +1044,7 @@ input[value="submit"] {
   justify-content: space-between;
   gap: 1rem;
   /* height: 40%; */
-  border-color: #F3F0F0;
+  border-color: #f3f0f0;
 }
 
 #login-username {
@@ -1072,8 +1059,8 @@ input[value="submit"] {
 }
 
 .r-label-text {
-  font-size: 0.875rem; 
-  line-height: 1.25rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .r-input-text {
@@ -1098,7 +1085,7 @@ input[value="submit"] {
 input[value="Log In"] {
   margin-top: 3%;
   border-radius: 0.375rem;
-  background-color: #45A1BD;
+  background-color: #45a1bd;
   width: 100%;
   height: 2rem;
   font-size: 1rem;
@@ -1164,6 +1151,7 @@ input[value="Log In"] {
   .input-field {
     margin-top: 0px; 
     margin-bottom: 16px;
+
   }
 
   .inputs-form > :nth-child(3) {
@@ -1205,7 +1193,7 @@ input[value="Log In"] {
     height: 24px;
     place-self: center;
   }
-  
+
   .user-icons {
     width: 60%;
     place-self: center;
@@ -1247,7 +1235,8 @@ input[value="Log In"] {
     justify-content: center;
   }
 
-  .login-content .logo, p {
+  .login-content .logo,
+  p {
     place-self: center;
   }
 
@@ -1305,7 +1294,7 @@ input[value="Log In"] {
   input[value="Log In"] {
     margin-top: 1rem;
     border-radius: 0.375rem;
-    background-color: #45A1BD;
+    background-color: #45a1bd;
     width: 100%;
     height: 3rem;
   }
@@ -1347,13 +1336,13 @@ input[value="Log In"] {
   .logo {
     place-self: center;
   }
-  
+
   .login-content p {
     place-self: center;
     font-size: 0.625rem;
     line-height: 1rem;
   }
-  
+
   .r-label-text {
     place-self: center;
     font-size: 0.75rem; /* 12px */
@@ -1368,16 +1357,9 @@ input[value="Log In"] {
     font-size: 12px;
   }
 
-  /* .login-button {
-    background: #45A1BD;
-    color: #000000;
-    width: 100%;
-  } */
-
   .r-form-wrapper {
     display: flex;
     width: 100%;
-    
   }
 
   .r-form-container {
@@ -1404,7 +1386,7 @@ input[value="Log In"] {
 
 @media (max-height: 380px) {
   .login-field {
-    padding: 0.5rem;;
+    padding: 0.5rem;
     gap: 0.25rem;
   }
 }

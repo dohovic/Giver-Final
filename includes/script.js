@@ -7,13 +7,17 @@ const jsonAddresses = fetch("includes/data.json")
     obj = json;
   });
 
-function loadAddresses() {
+function loadAddresses(e) {
   let Addresses = document.getElementById("addresses");
   obj.addresses.map((data) => {
     let select = document.createElement("option");
     const addressString = data.street + ", " + data.number;
     select.setAttribute("value", data.id + "," + addressString);
     select.innerHTML = addressString;
+    if (e == data.id) {
+      console.log("match");
+      select.selected = true;
+    }
     Addresses.appendChild(select);
   });
 }
