@@ -92,7 +92,7 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
                 <button class="w-7 mx-1"><img src="includes/images/icons/icon-star.png" alt="" /></button>
                 <button class="w-7 mx-1"><img src="includes/images/icons/icon-event.png" alt="" /></button>
                 <a class="w-7 mx-1 mr-5"
-                    href="http://localhost/Giver/Giver-Final/create-garden.php?garden_id=<?php echo $row['id'] ?>"><img
+                    href="http://localhost/mac/giver/create-garden.php?garden_id=<?php echo $row['id'] ?>"><img
                         src="includes/images/icons/icon-edit.png" alt="" /></a>
                 <!-- </div> -->
                 <button>
