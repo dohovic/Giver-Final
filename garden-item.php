@@ -118,11 +118,8 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
                         </span>
                     </div>
                 </div>
-
                 <div class="garden-image-input">
-                    <!-- <div class="garden-image"> -->
                     <img src="./includes/images/gardens/lemon_garden.png" alt="" />
-                    <!-- </div> -->
                 </div>
             </section>
             <section class="category-wrapper">
@@ -139,148 +136,13 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
             echo '</div></div></section>';
           }
           ?>
-                    <!-- <section class="plant-item" id="plants">
-            <div class="garden-image" id="item-display">
-              <img src="./includes/images/items/lemon-no-bottom-rounds.png" alt="" />
-              <div class="amount-display">
-                <span>4&nbsp</span>
-                <span>Lemon Trees</span>
-              </div>
-            </div>
-          </section>
-          -->
+
                 </div>
             </section>
             <section class="social-container">
                 <section class="social-comments" id="comments">
                 </section>
-
                 <section class="story-container" id="stories">
-                    <!-- <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/eyal-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Eyal</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/eyal-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/aliza-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Aliza</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/aliza-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/lihi-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Lihi</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/lihi-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/roni-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Roni</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/roni-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/or-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Or</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/or-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/sami-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Sami</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/sami-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/david-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>David</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/david-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/yitzhak-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Yitzhak</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/yitzhak-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="story-desktop">
-              <div class="story-profile-container">
-                <button>
-                  <img src="./includes/images/stories/alma-profile.png" alt="" id="story-profile" />
-                </button>
-                <span>Alma</span>
-              </div>
-              <div class="story-pic-container">
-                <img src="./includes/images/stories/alma-story.png" alt="" class="story-pic" />
-              </div>
-            </div>
-          </a> -->
                 </section>
             </section>
         </div>

@@ -1,7 +1,7 @@
 var tasks = [];
 
 var obj;
-const jsonAddresses = fetch("data.json")
+const jsonAddresses = fetch("includes/data.json")
   .then((response) => response.json())
   .then((json) => {
     obj = json;
