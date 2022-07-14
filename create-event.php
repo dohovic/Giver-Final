@@ -108,8 +108,8 @@ if (!empty($_SESSION["user"])) {
     <main>
         <div class="main-wrapper">
             <form action="#" method="POST">
-                <section class="input-container">
-                    <div class="inputs-form">
+                <section class="input-container" id="unreversal-input">
+                    <div class="inputs-form" id="unres-inputs">
                         <div class="input-field" id="line-input">
                             <input type="text" placeholder="Add Event Name" minlength="2" name="event_name" required />
                         </div>
@@ -134,20 +134,20 @@ if (!empty($_SESSION["user"])) {
                                 <input type="time" step="1" name="time" class="date" value="00:00:00" />
                             </div>
                         </div>
-                        <div class="input-field" id="text-input">
+                        <div class="input-field mb-0" id="text-input">
                             <textarea type="text" placeholder="Add Event Description" name="description"></textarea>
                         </div>
                     </div>
-                    <div>
-                        <a href="#">
-                            <div class="garden-image-input">
-                                <div class="upload-garden-photo">
-                                    <img src="includes/images/icons/add-image-garden-icon.png" alt="" />
-                                </div>
-                                <span>Garden Photo</span>
-                            </div>
-                        </a>
-                    </div>
+                    <!-- <div> -->
+                        <!-- <a href="#"> -->
+                            <button class="garden-image-input" id="upload-event-img">
+                                <!-- <div class="upload-garden-photo"> -->
+                                    <img src="includes/images/items/add-event-photo.png" alt="" />
+                                <!-- </div> -->
+                                <!-- <span>Garden Photo</span> -->
+                            </button>
+                        <!-- </a> -->
+                    <!-- </div> -->
                 </section>
                 <div class="tasks-wrapper">
                     <div class="tasks-container">
