@@ -27,7 +27,7 @@
       <nav
         class="self-center justify-self-center justify-items-center hidden lg:block"
       >
-        <ul class="flex col-4 gap-6">
+        <ul class="flex col-4 gap-6 mx-1">
           <li>
             <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
               <img
