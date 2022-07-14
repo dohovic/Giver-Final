@@ -737,6 +737,10 @@ input[value="submit"] {
 }
 
 @media only screen and (max-width: 1152px) {
+  .time-inputs > :first-child {
+    margin-bottom: 16px;
+  }
+  
   #tasks {
     place-items: center;
   }
@@ -1129,6 +1133,10 @@ input[value="Log In"] {
 }
 
 @media (max-width: 414px) {
+  .time-inputs {
+    gap: 16px;
+  }
+
   #upload-event-img {
     width: 100%;
   }
@@ -1155,7 +1163,7 @@ input[value="Log In"] {
 
   .input-field {
     margin-top: 0px; 
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 
   .inputs-form > :nth-child(3) {

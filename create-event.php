@@ -125,11 +125,11 @@ if (!empty($_SESSION["user"])) {
                             <!-- <input type="text" placeholder="Choose a Garden" /> -->
                         </div>
                         <div class="time-inputs">
-                            <div class="time-input mb-2">
+                            <div class="time-input">
                                 <div>Date</div>
                                 <input type="date" name="date" class="date" />
                             </div>
-                            <div class="time-input mb-2">
+                            <div class="time-input">
                                 <div>Time</div>
                                 <input type="time" step="1" name="time" class="date" value="00:00:00" />
                             </div>
