@@ -95,9 +95,12 @@
     </header>
     <main class="mt-10">
       <div class="main-wrapper">
+        <div class="input-field" id="hidden-input">
+          <span class="garden-detail" id="garden-name">Lemons garden</span>
+        </div>
         <section class="input-container">
           <div class="inputs-form">
-            <div class="input-field">
+            <div class="input-field" id="disappear-input">
               <span class="garden-detail" id="garden-name">Lemons garden</span>
             </div>
             <div class="input-field">
@@ -116,9 +119,9 @@
           </div>
 
           <div class="garden-image-input">
-            <div class="garden-image">
+            <!-- <div class="garden-image"> -->
               <img src="./includes/images/gardens/lemon_garden.png" alt="" />
-            </div>
+            <!-- </div> -->
           </div>
         </section>
         <section class="category-wrapper">

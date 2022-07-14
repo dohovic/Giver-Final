@@ -385,10 +385,19 @@ select {
 
 .inputs-form{
   min-width: 300px;
-  width: 60%;
+  width: 63%;
 }
 
+.inputs-form > :nth-child(3) {
+  margin-bottom: 0px;
+}
 
+#hidden-input {
+  visibility: hidden;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 
 .tasks-container {
   display: flex;
@@ -400,13 +409,16 @@ select {
 .garden-image-input {
   display: flex;
   flex-direction: column;
-  width: 424px;
-  height: 303px;
+  width: 32%;
+  /* height: 303px; */
   justify-content: center;
   justify-items: center;
   align-items: center;
   font-weight: 400;
-  background: #f3f0f0;
+  align-self: flex-end;
+  /* background: #f3f0f0; */
+  background-image: url("/includes/images/items/floral-pattern.jpg");
+  background-repeat: repeat;
 }
 
 .garden-image-edit {
@@ -653,7 +665,7 @@ input[value="submit"] {
   gap: 3rem;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  justify-content: end;
   /* margin: 0px auto; */
   /* align-items: center; */
 }
@@ -772,6 +784,30 @@ input[value="submit"] {
 }
 
 @media (max-width: 990px) {
+  .inputs-form {
+    width: 60%;
+  }
+
+  .input-field {
+    background: rgba(243, 240, 240, 0.7);
+  }
+
+  .garden-detail {
+    margin: 0 auto;
+  }
+
+  #garden-description {
+    text-align: center;
+  }
+
+  .garden-image-input{
+    width: 100%;
+  }
+
+  .inputs-form {
+    position: absolute;
+  }
+
   .story-container{
     width: 100%;
     justify-content: space-evenly;
@@ -806,7 +842,28 @@ input[value="submit"] {
   }
 }
 
+@media only screen and (max-width: 1345px) {
+  .story-container {
+    gap: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 1234px) {
+  .story-container {
+    gap: 3rem;
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
+  .inputs-form {
+    width: 70%;
+  }
+
+  .input-field {
+    background: rgba(243, 240, 240, 0.7);
+  }
+
   input[value="submit"] {
     place-self: center;
   }
@@ -819,12 +876,13 @@ input[value="submit"] {
     padding-top: 20px;
     padding-left: 0px;
   }
-  .garden-image-input{
-    width: 300px;
-  }
 
-  .story-container{
-    gap: 3rem;
+  .garden-image-input{
+    width: 100%;
+  }
+  
+  .inputs-form {
+    position: absolute;
   }
 
   .main-wrapper {
@@ -997,7 +1055,62 @@ input[value="Log In"] {
   height: 8rem; */
 }
 
+@media (max-width: 414px) {
+  .inputs-form {
+    min-width: 92vw;
+    position: relative;
+  }
+
+  .garden-image-input {
+    width: 92vw;
+  }
+
+  .input-container {
+    width: 92vw;
+    flex-direction: column-reverse;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .input-field {
+    margin-top: 0px; 
+    margin-bottom: 8px;
+  }
+
+  .inputs-form > :nth-child(3) {
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
+  }
+}
+
 @media (max-width: 599px) {
+  .garden-detail {
+    font-size: 12px;
+  }
+
+  #disappear-input {
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #hidden-input {
+    visibility: visible;
+    height: 100%;
+    /* margin-top: 16px; */
+    margin-bottom: 16px;
+    /* padding: 12px; */
+    place-self: center;
+    place-self: center;
+    background: none;
+    font-size: 2rem;
+  }
+
+  #hidden-input > span {
+    text-align: center;
+  }
+
   .login-helpers {
     justify-content: center;
   }
