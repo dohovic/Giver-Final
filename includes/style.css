@@ -1181,9 +1181,15 @@ input[value="Log In"] {
     align-self: center;
   }
 
-  .logo {
+  #logo {
     display: flex;
     padding-left: 3rem;
+    /* height: 100%; */
+  }
+
+  #login-logo {
+    display: flex;
+    /* padding-left: 3rem; */
     /* height: 100%; */
   }
 

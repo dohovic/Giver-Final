@@ -45,7 +45,7 @@ if (!empty($_POST["loginMail"])) {
             <div class="login-wrapper">
                 <div class="login-container">
                     <div class="login-content">
-                        <div class="logo">
+                        <div class="logo" id="login-logo">
                             <a href="#" id="logo"></a>
                         </div>
                         <!-- <h3>Log in to Giver</h3> -->
