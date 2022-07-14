@@ -417,8 +417,8 @@ select {
   font-weight: 400;
   align-self: flex-end;
   /* background: #f3f0f0; */
-  background-image: url("/includes/images/items/floral-pattern.jpg");
-  background-repeat: repeat;
+  /* background-image: url("/includes/images/items/floral-pattern.jpg");
+  background-repeat: repeat; */
 }
 
 .garden-image-edit {
@@ -1109,6 +1109,9 @@ input[value="Log In"] {
 
   #hidden-input > span {
     text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
   }
 
   .login-helpers {
