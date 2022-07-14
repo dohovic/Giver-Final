@@ -295,7 +295,7 @@ select {
 
 .time-inputs {
   display: flex;
-  max-width: 898px;
+  /* max-width: 898px; */
   min-height: 48px;
   gap: 19px;
 }
@@ -737,6 +737,22 @@ input[value="submit"] {
 }
 
 @media only screen and (max-width: 1152px) {
+  #tasks {
+    place-items: center;
+  }
+
+  .time-inputs {
+    gap: 0px;
+  }
+
+  .tasks-container {
+    padding-left: 0px;
+  }
+
+  #upload-event-img {
+    width: 70%;
+  }
+
   #plant-container {
     justify-content: center;
   }
@@ -897,6 +913,14 @@ input[value="submit"] {
 
 
 @media only screen and (max-width: 768px) {
+  #unres-inputs {
+    width: 100%;
+  }
+
+  #upload-event-img {
+    width: 90%;
+  }
+
   #upload-garden-img {
     max-width: 96%;
   }
@@ -1105,6 +1129,10 @@ input[value="Log In"] {
 }
 
 @media (max-width: 414px) {
+  #upload-event-img {
+    width: 100%;
+  }
+
   .inputs-form {
     min-width: 92vw;
     position: relative;
