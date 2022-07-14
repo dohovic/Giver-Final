@@ -104,7 +104,9 @@ if (!empty($_SESSION["user"]) && !empty($_GET['garden_id'])) {
   </header>
   <main class="mt-10">
     <div class="main-wrapper">
-
+      <div class="input-field" id="hidden-input">
+            <span class="garden-detail" id="garden-name">Lemons garden</span>
+      </div>
       <section class="input-container">
         <div class="inputs-form">
           <div class="input-field" id="disappear-input">
