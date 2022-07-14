@@ -5,7 +5,7 @@ include "db.php";
 session_start();
 echo $_SESSION["user"];
 if (empty($_SESSION["user"])) {
-    header('Location: ' . 'http://localhost/Giver/Giver-Final/index.php');
+    header('Location: ' . 'http://localhost/mac/giver/index.php');
 } else {
     $query = "SELECT * from tbl_203_test_gardens order by id DESC";
     $result = mysqli_query($connection, $query);
@@ -91,7 +91,7 @@ if (empty($_SESSION["user"])) {
                         while ($i < 4) {
 
                             if ($row = mysqli_fetch_assoc($result)) {
-                                echo "<a href='http://localhost/Giver/Giver-Final/garden-item.php?garden_id=" . $row['id'] . "'>";
+                                echo "<a href='http://localhost/mac/giver/garden-item.php?garden_id=" . $row['id'] . "'>";
                                 echo "<section class='garden-item'>";
                                 echo  "<div class='garden-image'>";
                                 echo "<img src='./includes/images/gardens/lemon_garden.png' alt='' />";
@@ -114,7 +114,7 @@ if (empty($_SESSION["user"])) {
                         while ($i < 4) {
 
                             if ($row = mysqli_fetch_assoc($result)) {
-                                echo "<a href='http://localhost/Giver/Giver-Final/garden-item.php?garden_id=" . $row['id'] . "'>";
+                                echo "<a href='http://localhost/mac/giver/garden-item.php?garden_id=" . $row['id'] . "'>";
                                 echo "<section class='garden-item'>";
                                 echo  "<div class='garden-image'>";
                                 echo "<img src='./includes/images/gardens/lemon_garden.png' alt='' />";
@@ -139,7 +139,7 @@ if (empty($_SESSION["user"])) {
                         while ($i < 4) {
 
                             if ($row = mysqli_fetch_assoc($result)) {
-                                echo "<a href='http://localhost/Giver/Giver-Final/garden-item.php?garden_id=" . $row['id'] . "'>";
+                                echo "<a href='http://localhost/mac/giver/garden-item.php?garden_id=" . $row['id'] . "'>";
                                 echo "<section class='garden-item'>";
                                 echo  "<div class='garden-image'>";
                                 echo "<img src='./includes/images/gardens/lemon_garden.png' alt='' />";
