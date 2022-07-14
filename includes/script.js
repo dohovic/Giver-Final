@@ -5,7 +5,6 @@ const jsonAddresses = fetch("includes/data.json")
   .then((response) => response.json())
   .then((json) => {
     obj = json;
-    console.log("reading obj", obj);
   });
 
 function loadAddresses() {
@@ -77,11 +76,8 @@ function removeTask(e) {
 function loadAddress(e) {
   if (e > 0) {
     let item = document.getElementById("garden-address");
-    console.log("test", e);
-    console.log(obj);
     const stringAddress = obj.addresses.filter((data) => data.id == e);
     item.innerHTML = stringAddress[0].street + ", " + stringAddress[0].number;
-    console.log(stringAddress[0].street + ", " + stringAddress[0].number);
   }
 }
 
@@ -170,7 +166,6 @@ function loadStories() {
     storyProfile.appendChild(btn);
     storyProfile.appendChild(span);
 
-    console.log(storyProfile);
     let storyPic = document.createElement("div");
     storyPic.setAttribute("class", "story-pic-container");
     let image1 = document.createElement("img");
