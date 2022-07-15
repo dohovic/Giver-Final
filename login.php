@@ -29,11 +29,7 @@ if (!empty($_POST["loginMail"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-        rel="stylesheet"
-      />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <link href="includes/style.css?v=<?php echo time(); ?>" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <title>Login</title>
@@ -48,18 +44,15 @@ if (!empty($_POST["loginMail"])) {
                         <div class="logo">
                             <a href="#" id="login-logo"></a>
                         </div>
-                        <!-- <h3>Log in to Giver</h3> -->
                         <p>Come smell the flowers</p>
                         <form action="#" method="post" class="login-form">
                             <div class="login-field" id="login-username">
                                 <label for="username" class="r-label-text">Username</label>
-                                <input type="text" class="r-input-text" placeholder="Enter your email" name="loginMail"
-                                    required>
+                                <input type="text" class="r-input-text" placeholder="Enter your email" name="loginMail" required>
                             </div>
                             <div class="login-field" id="login-pass">
                                 <label for="password" class="r-label-text">Password</label>
-                                <input type="password" class="r-input-text" placeholder="Enter password"
-                                    name="loginPass" required>
+                                <input type="password" class="r-input-text" placeholder="Enter password" name="loginPass" required>
                             </div>
                             <div class="helpers-container">
                                 <div class="login-helpers">

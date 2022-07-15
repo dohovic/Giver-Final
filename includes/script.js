@@ -1,7 +1,7 @@
 var tasks = [];
 
 var obj;
-const jsonAddresses = fetch('/includes/data.json')
+const jsonAddresses = fetch("includes/data.json")
   .then((response) => response.json())
   .then((json) => {
     obj = json;
@@ -15,7 +15,6 @@ function loadAddresses(e) {
     select.setAttribute("value", data.id + "," + addressString);
     select.innerHTML = addressString;
     if (e == data.id) {
-      console.log("match");
       select.selected = true;
     }
     Addresses.appendChild(select);

@@ -37,7 +37,7 @@ if (!empty($_SESSION["user"])) {
         }
     }
 } else {
-    header('Location: ' . 'http://localhost/Giver/Giver-Final/login.php');
+    header('Location: ' . 'http://se.shenkar.ac.il/students/2021-2022/web1/dev_203/login.php');
 }
 
 ?>
@@ -48,11 +48,7 @@ if (!empty($_SESSION["user"])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="includes/style.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -118,11 +114,8 @@ if (!empty($_SESSION["user"])) {
                             <select name="garden_id" required id="gardens">
                                 <?php while ($row  = mysqli_fetch_assoc($result1))
                                     echo "<option value=" . $row['id'] . ">" . $row['garden_name'] . "</option>";
-                                // echo print_r($row);  
-
                                 ?>
                             </select>
-                            <!-- <input type="text" placeholder="Choose a Garden" /> -->
                         </div>
                         <div class="time-inputs">
                             <div class="time-input">
@@ -138,16 +131,9 @@ if (!empty($_SESSION["user"])) {
                             <textarea type="text" placeholder="Add Event Description" name="description"></textarea>
                         </div>
                     </div>
-                    <!-- <div> -->
-                        <!-- <a href="#"> -->
-                            <button class="garden-image-input" id="upload-event-img">
-                                <!-- <div class="upload-garden-photo"> -->
-                                    <img src="includes/images/items/add-event-photo.png" alt="" />
-                                <!-- </div> -->
-                                <!-- <span>Garden Photo</span> -->
-                            </button>
-                        <!-- </a> -->
-                    <!-- </div> -->
+                    <button class="garden-image-input" id="upload-event-img">
+                        <img src="includes/images/items/add-event-photo.png" alt="" />
+                    </button>
                 </section>
                 <div class="tasks-wrapper">
                     <div class="tasks-container">
